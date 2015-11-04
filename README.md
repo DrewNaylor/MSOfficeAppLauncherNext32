@@ -20,3 +20,8 @@ If you want general information about this project, be sure to check the wiki on
 - After the Solution file is created, click the <code>Save All</code> to save your project.
 - Click <code>File>Add>Existing Project...</code> and navigate to where you cloned the repo earlier. Dig all the way down to ~~Bedrock~~ <code>MSOfficeAppLauncherNext32\MSOfficeAppLauncher</code> and open the file called "<code>MSOfficeAppLauncher32.vbproj</code>." 
 - If all goes well, the project should appear in the Visual Studio <code>Solution Explorer</code>.
+
+
+## Why do I need to create a new Solution file? Why can't I just use the original file?
+
+That's a great question. ~~I don't know why.~~ It's because the original Solution file is looking for a file called "<code>MSOfficeAppLauncher.vbproj</code>." You're probably thinking to yourself, "Isn't that the name of the file that I told Visual Studio to open?" You would be correct, except that there's no "32" at the end of the file it's looking for. That's because I develop both the 32-bit and the 64-bit versions in paralell. Because of that, I had to rename the name of the project file itself by right-clicking the name of the project (not the Solution file!) in the Solution Explorer and hitting "Rename." You can also just single-click on the name of the project and rename it that way. Also the 64-bit version is based on the 32-bit version.
