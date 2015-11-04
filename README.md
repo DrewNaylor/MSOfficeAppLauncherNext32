@@ -14,3 +14,6 @@ If you want general information about this project, be sure to check the wiki on
 
 - First, clone the repository by running:    <code>git clone https://github.com/DrewNaylor/MSOfficeAppLauncherNext32.git</code>
 - Next, open Visual Studio 2010.
+- When Visual Studio 2010 launches and is ready for input, click <code>File>New Project...</code>.
+- In the left sidebar, navigate to <code>Other Project Types\Visual Studio Solutions</code> and click on <code>Blank Solution</code>. 
+- Name your solution something in the <code>Name:</code> field, browse for the directory if necessary, and click the <code>OK</code> button.
