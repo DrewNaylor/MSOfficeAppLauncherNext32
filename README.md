@@ -1,4 +1,34 @@
 # Welcome to the repository for my App Launcher for Microsoft Office 2010!
+This is the 32-bit version. Read the file "LICENSE" in a text editor for the entire license. The readme continues after this notice.
+
+<code>Drew's MS Office App Launcher (32-bit) - Launch Office Apps Quickly!
+Copyright (C) 2013-2015  Drew Naylor
+Microsoft Office is copyright Microsoft Corp.
+(Note that the copyright years include the years left out by the hyphen.)</code>
+
+<code>This file is part of Drew's MS Office App Launcher (32-bit)
+(Program is also known as "Drew's App Launcher")</code>
+
+<code>Drew's App Launcher is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</code>
+
+<code>If you modify Drew's App Launcher, you must remove branding materials
+such as the "D" or "DN" logo from your version and replace it with something
+different as well as the actual name of the application to differentiate
+it from my original version. See "Drew's Modification Exception" for
+the full text, as well as the GPL v3+.</code>
+
+<code>Drew's App Launcher is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</code>
+
+<code>You should have received a copy of the GNU General Public License
+along with Drew's App Launcher.  If not, see <http://www.gnu.org/licenses/>.
+If you did not recieve a copy of "Drew's Modification Exception,"
+please visit <http://drews-apps.weebly.com/about> Note that these files should be in one file called LICENSE.</code>
 
 ## Note that for now I am only getting up-to-speed with GitHub hosting for my applications and will fix bugs and add new features as soon as I get settled in. It may be a while before there is documentation complete on here.
 
