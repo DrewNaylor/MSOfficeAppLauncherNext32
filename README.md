@@ -8,6 +8,15 @@ If you want general information about this project, be sure to check the wiki on
 
 --
 
+# Software Required to Edit the Project
+
+- Obviously, you'll need Git. GitHub has GitHub Desktop and Git Shell for Windows. There is one for Mac as well.
+- Microsoft Windows. I developed this using Windows 7 but it should work on Windows XP as I originally used XP to develop it. Windows 8/8.1/10 might work but I haven't tested those yet.
+- Microsoft Visual Studio 2010 Professional. Again, it should be possible to use the Express edition, but I haven't used that version to develop this in such a long time. I don't know if Visual Studio 2012+ will work. I want it to be able to support XP for as long as possible because Microsoft Office 2010 supports XP. Maybe I will eventually un-support XP. If I do upgrade from VS2010, I would go to VS2013 as it brought back color on some of the icons.
+- Microsoft .Net Framework 4.0.
+- The latest updates for VS 2010.
+- Microsoft Office 2010 Professional (or Professional Plus [this app was made for the ProPlus version.]) If you don't have Office or don't want to install Office, you can actually use a collection of dummy files I made called "dummyOffice." They are made up of just a window that says "You have successfully launched the [app] dummy component. Click Ok to continue." I will soon release them but right now I am just getting everything up-to-speed on GitHub.
+
 # How to get Up and Running with the Files in this Repo
 
 
