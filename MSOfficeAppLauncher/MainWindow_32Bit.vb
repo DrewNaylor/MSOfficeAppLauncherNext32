@@ -42,6 +42,9 @@ Public Class Main
         zSecretOptionsButton.Hide()
     End Sub
 
+#Region "Applications to launch."
+
+
     'Microsoft Access
     Private Sub Button1_Click_1(sender As System.Object, e As System.EventArgs) Handles Button1.Click
         Shell(My.Settings.officeDriveLocation + ":\Program Files\Microsoft Office\Office14\MSACCESS.EXE")
@@ -111,6 +114,7 @@ Public Class Main
     Private Sub Button14_Click(sender As System.Object, e As System.EventArgs) Handles Button14.Click
         Shell(My.Settings.officeDriveLocation + ":\Program Files\Microsoft Office\Office14\SETLANG.EXE")
     End Sub
+#End Region
 
     'Open the version history - 32-bit
     Private Sub ThreeTwoBitHist_Click(sender As System.Object, e As System.EventArgs) Handles ThreeTwoBitHist.Click
