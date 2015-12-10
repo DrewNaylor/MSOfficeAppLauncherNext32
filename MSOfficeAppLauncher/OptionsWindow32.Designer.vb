@@ -49,10 +49,11 @@ Partial Class OptionsWindow32
         '
         'buttonClearDrive
         '
+        Me.buttonClearDrive.AutoSize = True
         Me.buttonClearDrive.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.buttonClearDrive.Location = New System.Drawing.Point(275, 76)
+        Me.buttonClearDrive.Location = New System.Drawing.Point(285, 76)
         Me.buttonClearDrive.Name = "buttonClearDrive"
-        Me.buttonClearDrive.Size = New System.Drawing.Size(51, 23)
+        Me.buttonClearDrive.Size = New System.Drawing.Size(41, 23)
         Me.buttonClearDrive.TabIndex = 4
         Me.buttonClearDrive.Text = "Clear"
         Me.buttonClearDrive.UseVisualStyleBackColor = True
