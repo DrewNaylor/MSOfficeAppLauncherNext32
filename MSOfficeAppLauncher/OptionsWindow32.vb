@@ -42,10 +42,6 @@ Public Class OptionsWindow32
         End If
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As System.Object, e As System.EventArgs) Handles textboxOfficeDrive.TextChanged
-
-    End Sub
-
     Private Sub buttonResetToDefaults_Click(sender As System.Object, e As System.EventArgs) Handles buttonResetToDefaults.Click
 
         'Reset the "Drive Selector" textbox to drive C.
@@ -88,5 +84,11 @@ Public Class OptionsWindow32
         My.Settings.Reload()
         Me.Close()
 
+    End Sub
+
+    Private Sub buttonClearDrive_Click(sender As System.Object, e As System.EventArgs) Handles buttonClearDrive.Click
+
+        'Clear the OfficeDrive textbox.
+        textboxOfficeDrive.Text = ""
     End Sub
 End Class

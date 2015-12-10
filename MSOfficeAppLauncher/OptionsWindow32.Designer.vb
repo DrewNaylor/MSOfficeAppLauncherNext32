@@ -23,6 +23,7 @@ Partial Class OptionsWindow32
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.buttonClearDrive = New System.Windows.Forms.Button()
         Me.buttonCancel = New System.Windows.Forms.Button()
         Me.buttonResetToDefaults = New System.Windows.Forms.Button()
         Me.buttonSaveSettings = New System.Windows.Forms.Button()
@@ -45,6 +46,16 @@ Partial Class OptionsWindow32
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(370, 304)
         Me.Panel1.TabIndex = 0
+        '
+        'buttonClearDrive
+        '
+        Me.buttonClearDrive.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.buttonClearDrive.Location = New System.Drawing.Point(275, 76)
+        Me.buttonClearDrive.Name = "buttonClearDrive"
+        Me.buttonClearDrive.Size = New System.Drawing.Size(51, 23)
+        Me.buttonClearDrive.TabIndex = 4
+        Me.buttonClearDrive.Text = "Clear"
+        Me.buttonClearDrive.UseVisualStyleBackColor = True
         '
         'buttonCancel
         '
@@ -81,12 +92,13 @@ Partial Class OptionsWindow32
         '
         'groupboxOfficeLocation
         '
+        Me.groupboxOfficeLocation.Controls.Add(Me.buttonClearDrive)
         Me.groupboxOfficeLocation.Controls.Add(Me.Label2)
         Me.groupboxOfficeLocation.Controls.Add(Me.textboxOfficeDrive)
         Me.groupboxOfficeLocation.Controls.Add(Me.Label1)
         Me.groupboxOfficeLocation.Location = New System.Drawing.Point(3, 3)
         Me.groupboxOfficeLocation.Name = "groupboxOfficeLocation"
-        Me.groupboxOfficeLocation.Size = New System.Drawing.Size(362, 128)
+        Me.groupboxOfficeLocation.Size = New System.Drawing.Size(362, 116)
         Me.groupboxOfficeLocation.TabIndex = 0
         Me.groupboxOfficeLocation.TabStop = False
         Me.groupboxOfficeLocation.Text = "Where is Microsoft Office located?"
@@ -154,4 +166,5 @@ Partial Class OptionsWindow32
     Friend WithEvents textboxOfficeDrive As System.Windows.Forms.TextBox
     Friend WithEvents buttonCancel As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents buttonClearDrive As System.Windows.Forms.Button
 End Class
