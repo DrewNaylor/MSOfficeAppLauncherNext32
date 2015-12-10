@@ -62,9 +62,18 @@ Public Class OptionsWindow32
             textboxOfficeDrive.Text = "C"
 
         Else
-
-            'Save the settings for the "Drive Selector" textbox and other settings if I implement them.
+            
+            'This is where to look up the drive for launching the programs.
             My.Settings.officeDriveLocation = textboxOfficeDrive.Text
+
+            'Choose how to display the changelogs.
+            If checkboxChangelog.Checked = True Then
+                My.Settings.changelogDisplayMode = True
+            Else
+                My.Settings.changelogDisplayMode = False
+            End If
+
+            'Save settings.
             My.Settings.Save()
             My.Settings.Reload()
             MessageBox.Show("Settings saved.")
@@ -76,6 +85,16 @@ Public Class OptionsWindow32
     'When the Options window loads, pull up the user's settings.
     Private Sub OptionsWindow32_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         textboxOfficeDrive.Text = My.Settings.officeDriveLocation
+
+        checkboxChangelog.Checked = My.Settings.changelogDisplayMode
+
+
+        'Fill in the checkboxChangelog with the proper text.
+        If My.Settings.changelogDisplayMode = True Then
+            checkboxChangelog.Text = "Load the changelog in your default browser. (Recommended)"
+        Else
+            checkboxChangelog.Text = "Use the old internal page to view changelogs."
+        End If
     End Sub
 
     Private Sub buttonCancel_Click(sender As System.Object, e As System.EventArgs) Handles buttonCancel.Click
@@ -90,5 +109,15 @@ Public Class OptionsWindow32
 
         'Clear the OfficeDrive textbox.
         textboxOfficeDrive.Text = ""
+    End Sub
+
+    Private Sub checkboxChangelog_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles checkboxChangelog.CheckedChanged
+
+        'This code tells the program how to change the text on the checkbox.
+        If checkboxChangelog.Checked = True Then
+            checkboxChangelog.Text = "Load the changelog in your default browser. (Recommended)"
+        Else
+            checkboxChangelog.Text = "Use the old internal page to view changelogs."
+        End If
     End Sub
 End Class
