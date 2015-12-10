@@ -43,15 +43,16 @@ Partial Class OptionsWindow32
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(368, 210)
+        Me.Panel1.Size = New System.Drawing.Size(370, 304)
         Me.Panel1.TabIndex = 0
         '
         'buttonCancel
         '
         Me.buttonCancel.AccessibleName = "Cancel Button"
-        Me.buttonCancel.Location = New System.Drawing.Point(198, 178)
+        Me.buttonCancel.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.buttonCancel.Location = New System.Drawing.Point(211, 272)
         Me.buttonCancel.Name = "buttonCancel"
-        Me.buttonCancel.Size = New System.Drawing.Size(75, 23)
+        Me.buttonCancel.Size = New System.Drawing.Size(64, 23)
         Me.buttonCancel.TabIndex = 2
         Me.buttonCancel.Text = "Cancel"
         Me.buttonCancel.UseVisualStyleBackColor = True
@@ -59,9 +60,10 @@ Partial Class OptionsWindow32
         'buttonResetToDefaults
         '
         Me.buttonResetToDefaults.AccessibleName = "Reset to Defaults Button"
-        Me.buttonResetToDefaults.Location = New System.Drawing.Point(12, 178)
+        Me.buttonResetToDefaults.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.buttonResetToDefaults.Location = New System.Drawing.Point(12, 272)
         Me.buttonResetToDefaults.Name = "buttonResetToDefaults"
-        Me.buttonResetToDefaults.Size = New System.Drawing.Size(75, 23)
+        Me.buttonResetToDefaults.Size = New System.Drawing.Size(64, 23)
         Me.buttonResetToDefaults.TabIndex = 3
         Me.buttonResetToDefaults.Text = "Defaults"
         Me.buttonResetToDefaults.UseVisualStyleBackColor = True
@@ -69,9 +71,10 @@ Partial Class OptionsWindow32
         'buttonSaveSettings
         '
         Me.buttonSaveSettings.AccessibleName = "Save Button"
-        Me.buttonSaveSettings.Location = New System.Drawing.Point(279, 178)
+        Me.buttonSaveSettings.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.buttonSaveSettings.Location = New System.Drawing.Point(292, 272)
         Me.buttonSaveSettings.Name = "buttonSaveSettings"
-        Me.buttonSaveSettings.Size = New System.Drawing.Size(75, 23)
+        Me.buttonSaveSettings.Size = New System.Drawing.Size(64, 23)
         Me.buttonSaveSettings.TabIndex = 1
         Me.buttonSaveSettings.Text = "Save"
         Me.buttonSaveSettings.UseVisualStyleBackColor = True
@@ -127,7 +130,7 @@ Partial Class OptionsWindow32
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(368, 210)
+        Me.ClientSize = New System.Drawing.Size(370, 304)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
