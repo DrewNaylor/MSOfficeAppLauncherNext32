@@ -584,7 +584,6 @@ Partial Class Main
         '
         'TabPage2
         '
-        Me.TabPage2.AutoScroll = True
         Me.TabPage2.Controls.Add(Me.GroupBox8)
         Me.TabPage2.Controls.Add(Me.GroupBox3)
         Me.TabPage2.Controls.Add(Me.GroupBox2)
