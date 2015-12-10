@@ -46,6 +46,8 @@ Public Class OptionsWindow32
 
         'Reset the "Drive Selector" textbox to drive C.
         textboxOfficeDrive.Text = "C"
+        'Reset the checkboxChangelog to the checked position.
+        checkboxChangelog.Checked = True
         'Show a message box informing the user that they need to click the Save button for the changes to take effect.
         MessageBox.Show("Values reset to default. Click the Save button to save changes.")
 
