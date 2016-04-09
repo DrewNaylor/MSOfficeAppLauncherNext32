@@ -23,20 +23,20 @@ Partial Class OptionsWindow32
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.buttonClearDrive = New System.Windows.Forms.Button()
+        Me.groupboxChangelogStyle = New System.Windows.Forms.GroupBox()
+        Me.checkboxChangelog = New System.Windows.Forms.CheckBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.buttonCancel = New System.Windows.Forms.Button()
         Me.buttonResetToDefaults = New System.Windows.Forms.Button()
         Me.buttonSaveSettings = New System.Windows.Forms.Button()
         Me.groupboxOfficeLocation = New System.Windows.Forms.GroupBox()
+        Me.buttonClearDrive = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.textboxOfficeDrive = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.groupboxChangelogStyle = New System.Windows.Forms.GroupBox()
-        Me.checkboxChangelog = New System.Windows.Forms.CheckBox()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
-        Me.groupboxOfficeLocation.SuspendLayout()
         Me.groupboxChangelogStyle.SuspendLayout()
+        Me.groupboxOfficeLocation.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -52,16 +52,37 @@ Partial Class OptionsWindow32
         Me.Panel1.Size = New System.Drawing.Size(370, 292)
         Me.Panel1.TabIndex = 0
         '
-        'buttonClearDrive
+        'groupboxChangelogStyle
         '
-        Me.buttonClearDrive.AutoSize = True
-        Me.buttonClearDrive.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.buttonClearDrive.Location = New System.Drawing.Point(285, 76)
-        Me.buttonClearDrive.Name = "buttonClearDrive"
-        Me.buttonClearDrive.Size = New System.Drawing.Size(41, 23)
-        Me.buttonClearDrive.TabIndex = 4
-        Me.buttonClearDrive.Text = "Clear"
-        Me.buttonClearDrive.UseVisualStyleBackColor = True
+        Me.groupboxChangelogStyle.Controls.Add(Me.checkboxChangelog)
+        Me.groupboxChangelogStyle.Controls.Add(Me.Label3)
+        Me.groupboxChangelogStyle.Location = New System.Drawing.Point(4, 126)
+        Me.groupboxChangelogStyle.Name = "groupboxChangelogStyle"
+        Me.groupboxChangelogStyle.Size = New System.Drawing.Size(361, 107)
+        Me.groupboxChangelogStyle.TabIndex = 5
+        Me.groupboxChangelogStyle.TabStop = False
+        Me.groupboxChangelogStyle.Text = "How should changelogs be presented?"
+        '
+        'checkboxChangelog
+        '
+        Me.checkboxChangelog.AutoSize = True
+        Me.checkboxChangelog.Checked = True
+        Me.checkboxChangelog.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.checkboxChangelog.Location = New System.Drawing.Point(21, 78)
+        Me.checkboxChangelog.Name = "checkboxChangelog"
+        Me.checkboxChangelog.Size = New System.Drawing.Size(15, 14)
+        Me.checkboxChangelog.TabIndex = 3
+        Me.checkboxChangelog.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(42, 20)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(264, 39)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "This setting configures whether the changelogs should" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "appear in your default bro" & _
+    "wser or use an integrated " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "page."
         '
         'buttonCancel
         '
@@ -109,13 +130,24 @@ Partial Class OptionsWindow32
         Me.groupboxOfficeLocation.TabStop = False
         Me.groupboxOfficeLocation.Text = "Where is Microsoft Office located?"
         '
+        'buttonClearDrive
+        '
+        Me.buttonClearDrive.AutoSize = True
+        Me.buttonClearDrive.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.buttonClearDrive.Location = New System.Drawing.Point(285, 76)
+        Me.buttonClearDrive.Name = "buttonClearDrive"
+        Me.buttonClearDrive.Size = New System.Drawing.Size(41, 23)
+        Me.buttonClearDrive.TabIndex = 4
+        Me.buttonClearDrive.Text = "Clear"
+        Me.buttonClearDrive.UseVisualStyleBackColor = True
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(40, 26)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(286, 39)
-        Me.Label2.TabIndex = 3
+        Me.Label2.TabIndex = 2
         Me.Label2.Text = "Please type in the textbox below the drive you installed" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Microsoft Office on. No" & _
     "te that you cannot use backspaces," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "lowercase letters (a, b, c,) or numbers/spec" & _
     "ial characters."
@@ -128,7 +160,7 @@ Partial Class OptionsWindow32
         Me.textboxOfficeDrive.Name = "textboxOfficeDrive"
         Me.textboxOfficeDrive.ShortcutsEnabled = False
         Me.textboxOfficeDrive.Size = New System.Drawing.Size(20, 20)
-        Me.textboxOfficeDrive.TabIndex = 2
+        Me.textboxOfficeDrive.TabIndex = 3
         Me.textboxOfficeDrive.Text = "C"
         Me.textboxOfficeDrive.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.textboxOfficeDrive.WordWrap = False
@@ -143,38 +175,6 @@ Partial Class OptionsWindow32
         Me.Label1.Size = New System.Drawing.Size(202, 13)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = ":\Program Files\Microsoft Office\Office14"
-        '
-        'groupboxChangelogStyle
-        '
-        Me.groupboxChangelogStyle.Controls.Add(Me.checkboxChangelog)
-        Me.groupboxChangelogStyle.Controls.Add(Me.Label3)
-        Me.groupboxChangelogStyle.Location = New System.Drawing.Point(4, 126)
-        Me.groupboxChangelogStyle.Name = "groupboxChangelogStyle"
-        Me.groupboxChangelogStyle.Size = New System.Drawing.Size(361, 107)
-        Me.groupboxChangelogStyle.TabIndex = 5
-        Me.groupboxChangelogStyle.TabStop = False
-        Me.groupboxChangelogStyle.Text = "How should changelogs be presented?"
-        '
-        'checkboxChangelog
-        '
-        Me.checkboxChangelog.AutoSize = True
-        Me.checkboxChangelog.Checked = True
-        Me.checkboxChangelog.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.checkboxChangelog.Location = New System.Drawing.Point(21, 78)
-        Me.checkboxChangelog.Name = "checkboxChangelog"
-        Me.checkboxChangelog.Size = New System.Drawing.Size(15, 14)
-        Me.checkboxChangelog.TabIndex = 3
-        Me.checkboxChangelog.UseVisualStyleBackColor = True
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(42, 20)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(264, 39)
-        Me.Label3.TabIndex = 0
-        Me.Label3.Text = "This setting configures whether the changelogs should" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "appear in your default bro" & _
-    "wser or use an integrated " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "page."
         '
         'OptionsWindow32
         '
@@ -191,10 +191,10 @@ Partial Class OptionsWindow32
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Options"
         Me.Panel1.ResumeLayout(False)
-        Me.groupboxOfficeLocation.ResumeLayout(False)
-        Me.groupboxOfficeLocation.PerformLayout()
         Me.groupboxChangelogStyle.ResumeLayout(False)
         Me.groupboxChangelogStyle.PerformLayout()
+        Me.groupboxOfficeLocation.ResumeLayout(False)
+        Me.groupboxOfficeLocation.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
