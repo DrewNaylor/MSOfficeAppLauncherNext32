@@ -735,7 +735,7 @@ Partial Class Main
         Me.MinimumSize = New System.Drawing.Size(520, 520)
         Me.Name = "Main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Drew's App Launcher for Office 2010 ProPlus (32-bit Edition, Next)"
+        Me.Text = "Drew's App Launcher for Office 2010 ProPlus (32-bit Edition, Snapshot Preview)"
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
         Me.ToolStripContainer1.BottomToolStripPanel.ResumeLayout(False)
