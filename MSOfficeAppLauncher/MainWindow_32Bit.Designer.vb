@@ -651,7 +651,7 @@ Partial Class Main
         Me.GroupBox3.Controls.Add(Me.TextBox2)
         Me.GroupBox3.Location = New System.Drawing.Point(9, 271)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(471, 141)
+        Me.GroupBox3.Size = New System.Drawing.Size(471, 156)
         Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Notes"
@@ -664,7 +664,7 @@ Partial Class Main
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.ReadOnly = True
         Me.TextBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox2.Size = New System.Drawing.Size(458, 115)
+        Me.TextBox2.Size = New System.Drawing.Size(458, 130)
         Me.TextBox2.TabIndex = 0
         Me.TextBox2.Text = resources.GetString("TextBox2.Text")
         '
@@ -672,9 +672,9 @@ Partial Class Main
         '
         Me.GroupBox2.Controls.Add(Me.LinkLabel2)
         Me.GroupBox2.Controls.Add(Me.LinkLabel1)
-        Me.GroupBox2.Location = New System.Drawing.Point(9, 418)
+        Me.GroupBox2.Location = New System.Drawing.Point(9, 433)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(471, 76)
+        Me.GroupBox2.Size = New System.Drawing.Size(471, 61)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "My Web Sites"
@@ -682,22 +682,22 @@ Partial Class Main
         'LinkLabel2
         '
         Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.Location = New System.Drawing.Point(98, 30)
+        Me.LinkLabel2.Location = New System.Drawing.Point(73, 30)
         Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(100, 13)
+        Me.LinkLabel2.Size = New System.Drawing.Size(116, 13)
         Me.LinkLabel2.TabIndex = 1
         Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "More Applications..."
+        Me.LinkLabel2.Text = "Drew's GitHub Profile..."
         '
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.Location = New System.Drawing.Point(246, 30)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(81, 13)
+        Me.LinkLabel1.Size = New System.Drawing.Size(116, 13)
         Me.LinkLabel1.TabIndex = 0
         Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Main Website..."
+        Me.LinkLabel1.Text = "Drew's Main Website..."
         '
         'GroupBox1
         '
@@ -735,7 +735,7 @@ Partial Class Main
         Me.MinimumSize = New System.Drawing.Size(520, 520)
         Me.Name = "Main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Drew's App Launcher for Office 2010 ProPlus (32-bit Edition, Next)"
+        Me.Text = "Drew's App Launcher for Office 2010 ProPlus (32-bit Edition, Snapshot Preview)"
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
         Me.ToolStripContainer1.BottomToolStripPanel.ResumeLayout(False)
