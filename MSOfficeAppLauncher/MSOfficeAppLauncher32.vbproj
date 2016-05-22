@@ -26,13 +26,12 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
-    <SupportUrl>http://www.drews-apps.weebly.com</SupportUrl>
+    <SupportUrl>https://github.com/DrewNaylor/MSOfficeAppLauncherNext32/issues</SupportUrl>
     <ProductName>Drew%27s App Launcher for Microsoft Office 2010 ProPlus %2832-bit%29</ProductName>
     <PublisherName>Drew Naylor</PublisherName>
     <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>2.7.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
-    <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
