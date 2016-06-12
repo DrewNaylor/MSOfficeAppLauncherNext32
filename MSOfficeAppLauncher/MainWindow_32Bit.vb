@@ -150,4 +150,7 @@ Public Class Main
         Process.Start("http://www.github.com/DrewNaylor")
     End Sub
 
+    Private Sub buttonReadOld64bitChangelogs_Click(sender As System.Object, e As System.EventArgs) Handles buttonReadOld64bitChangelogs.Click
+        Process.Start("https://github.com/DrewNaylor/MSOfficeAppLauncherNext32/wiki/Old-32-Bit-Changelogs")
+    End Sub
 End Class

@@ -149,38 +149,13 @@
     <value>126, 17</value>
   </metadata>
   <data name="UpdateHistoryTextBox.Text" xml:space="preserve">
-    <value>*Note: This Version History textbox has been
-depricated in favor of the buttons below for the 32-bit
-and 64-bit version history. This box will be removed in the future.
+    <value>*Note: 
+This Version History textbox will not exist in version 3.0. If you would like to read the
+old changelogs for this application, please visit the Wiki page here: https://github.com/DrewNaylor/MSOfficeAppLauncherNext32/wiki/Old-32-Bit-Changelogs
+Hilight that URL and press Ctrl+C (or Command+C on Macs) and paste it into your browser.
 
 
-
-
-What's New
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Version 2.5
-----------------------------------------
-Update 0: Getting ready to add some
-	"secret" features
-
-Version 2.4
-----------------------------------------
-
-32-Bit and 64-Bit Editions:
-===============
-
-Update 3.1 Minor bug fixes.
-
-Update 3 changed the shortcut on my	About page to work.
-
-Update 2 added some new features.
-
-64-Bit Edition:
-===============
-
-Update 3 changed some text in the	About page.
-Update 3 also added this column.</value>
+Or you can click this button right here:</value>
   </data>
   <data name="TextBox2.Text" xml:space="preserve">
     <value>--&gt; Some applications will open on the task bar while others will open on top.
