@@ -24,6 +24,7 @@ Partial Class OptionsWindow32
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.groupboxChangelogStyle = New System.Windows.Forms.GroupBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.checkboxChangelog = New System.Windows.Forms.CheckBox()
         Me.buttonCancel = New System.Windows.Forms.Button()
         Me.buttonResetToDefaults = New System.Windows.Forms.Button()
@@ -33,7 +34,6 @@ Partial Class OptionsWindow32
         Me.Label2 = New System.Windows.Forms.Label()
         Me.textboxOfficeDrive = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.groupboxChangelogStyle.SuspendLayout()
         Me.groupboxOfficeLocation.SuspendLayout()
@@ -62,6 +62,17 @@ Partial Class OptionsWindow32
         Me.groupboxChangelogStyle.TabIndex = 5
         Me.groupboxChangelogStyle.TabStop = False
         Me.groupboxChangelogStyle.Text = "How should changelogs be presented?"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.ForeColor = System.Drawing.Color.Red
+        Me.Label3.Location = New System.Drawing.Point(39, 30)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(247, 26)
+        Me.Label3.TabIndex = 4
+        Me.Label3.Text = "The following option will be removed in version 3.0." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "If unsure, leave it uncheck" & _
+    "ed."
         '
         'checkboxChangelog
         '
@@ -166,17 +177,6 @@ Partial Class OptionsWindow32
         Me.Label1.Size = New System.Drawing.Size(202, 13)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = ":\Program Files\Microsoft Office\Office14"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.ForeColor = System.Drawing.Color.Red
-        Me.Label3.Location = New System.Drawing.Point(39, 30)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(247, 26)
-        Me.Label3.TabIndex = 4
-        Me.Label3.Text = "The following option will be removed in version 3.0." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "If unsure, leave it uncheck" & _
-    "ed."
         '
         'OptionsWindow32
         '
