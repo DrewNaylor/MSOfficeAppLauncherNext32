@@ -150,7 +150,8 @@ Public Class Main
         Process.Start("http://www.github.com/DrewNaylor")
     End Sub
 
-    Private Sub buttonReadOld64bitChangelogs_Click(sender As System.Object, e As System.EventArgs) Handles buttonReadOld64bitChangelogs.Click
+    'This button takes the user to my wiki page with the old 32-bit changelogs.
+    Private Sub buttonReadOld64bitChangelogs_Click(sender As System.Object, e As System.EventArgs) Handles buttonReadOld32bitChangelogs.Click
         Process.Start("https://github.com/DrewNaylor/MSOfficeAppLauncherNext32/wiki/Old-32-Bit-Changelogs")
     End Sub
 End Class

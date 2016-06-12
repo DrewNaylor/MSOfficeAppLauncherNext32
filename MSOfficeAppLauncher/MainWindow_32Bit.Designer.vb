@@ -79,7 +79,7 @@ Partial Class Main
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.buttonReadOld64bitChangelogs = New System.Windows.Forms.Button()
+        Me.buttonReadOld32bitChangelogs = New System.Windows.Forms.Button()
         Me.StatusStrip1.SuspendLayout()
         Me.ToolStripContainer1.BottomToolStripPanel.SuspendLayout()
         Me.ToolStripContainer1.ContentPanel.SuspendLayout()
@@ -599,7 +599,7 @@ Partial Class Main
         '
         'GroupBox8
         '
-        Me.GroupBox8.Controls.Add(Me.buttonReadOld64bitChangelogs)
+        Me.GroupBox8.Controls.Add(Me.buttonReadOld32bitChangelogs)
         Me.GroupBox8.Controls.Add(Me.GroupBox9)
         Me.GroupBox8.Controls.Add(Me.UpdateHistoryTextBox)
         Me.GroupBox8.Location = New System.Drawing.Point(486, 1)
@@ -723,14 +723,14 @@ Partial Class Main
         Me.TextBox1.TabIndex = 0
         Me.TextBox1.Text = resources.GetString("TextBox1.Text")
         '
-        'buttonReadOld64bitChangelogs
+        'buttonReadOld32bitChangelogs
         '
-        Me.buttonReadOld64bitChangelogs.Location = New System.Drawing.Point(7, 241)
-        Me.buttonReadOld64bitChangelogs.Name = "buttonReadOld64bitChangelogs"
-        Me.buttonReadOld64bitChangelogs.Size = New System.Drawing.Size(187, 73)
-        Me.buttonReadOld64bitChangelogs.TabIndex = 4
-        Me.buttonReadOld64bitChangelogs.Text = "Read the old 32-bit Changelogs"
-        Me.buttonReadOld64bitChangelogs.UseVisualStyleBackColor = True
+        Me.buttonReadOld32bitChangelogs.Location = New System.Drawing.Point(7, 241)
+        Me.buttonReadOld32bitChangelogs.Name = "buttonReadOld32bitChangelogs"
+        Me.buttonReadOld32bitChangelogs.Size = New System.Drawing.Size(187, 73)
+        Me.buttonReadOld32bitChangelogs.TabIndex = 4
+        Me.buttonReadOld32bitChangelogs.Text = "Read the Old 32-bit Changelogs"
+        Me.buttonReadOld32bitChangelogs.UseVisualStyleBackColor = True
         '
         'Main
         '
@@ -844,6 +844,6 @@ Partial Class Main
     Friend WithEvents Button15 As System.Windows.Forms.Button
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents LinkLabel2 As System.Windows.Forms.LinkLabel
-    Friend WithEvents buttonReadOld64bitChangelogs As System.Windows.Forms.Button
+    Friend WithEvents buttonReadOld32bitChangelogs As System.Windows.Forms.Button
 
 End Class
