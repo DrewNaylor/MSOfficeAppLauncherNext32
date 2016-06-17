@@ -70,9 +70,9 @@ Public Class OptionsWindow32
 
             'Choose how to display the changelogs.
             If checkboxChangelog.Checked = True Then
-                My.Settings.changelogDisplayMode = True
+                My.Settings.deprecatedChangelogDisplayMode = True
             Else
-                My.Settings.changelogDisplayMode = False
+                My.Settings.deprecatedChangelogDisplayMode = False
             End If
 
             'Save settings.
@@ -88,7 +88,7 @@ Public Class OptionsWindow32
     Private Sub OptionsWindow32_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         textboxOfficeDrive.Text = My.Settings.officeDriveLocation
 
-        checkboxChangelog.Checked = My.Settings.changelogDisplayMode
+        checkboxChangelog.Checked = My.Settings.deprecatedChangelogDisplayMode
     End Sub
 
     Private Sub buttonCancel_Click(sender As System.Object, e As System.EventArgs) Handles buttonCancel.Click
