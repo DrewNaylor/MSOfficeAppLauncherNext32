@@ -136,9 +136,9 @@ Partial Class Main
         Me.ToolStripStatusLabel1.AccessibleName = "Welcome to the App!"
         Me.ToolStripStatusLabel1.BackColor = System.Drawing.Color.Transparent
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
-        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(645, 17)
-        Me.ToolStripStatusLabel1.Text = "Welcome to Drew's App Launcher for Office 2010. Click on a program name and it sh" & _
-    "ould load somewhere on the screen."
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(540, 17)
+        Me.ToolStripStatusLabel1.Text = "Welcome to Drew's App Launcher for MS Office 2010. Click on a program name and it" & _
+    " should appear."
         '
         'ToolStripContainer1
         '
@@ -737,7 +737,8 @@ Partial Class Main
         Me.MinimumSize = New System.Drawing.Size(520, 520)
         Me.Name = "Main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Drew's App Launcher for Office 2010 ProPlus (32-bit Edition, Snapshot Preview 2)"
+        Me.Text = "Drew's App Launcher for MS Office Professional Plus 2010 (32-bit Edition, Snapsho" & _
+    "t Preview 2)"
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
         Me.ToolStripContainer1.BottomToolStripPanel.ResumeLayout(False)
