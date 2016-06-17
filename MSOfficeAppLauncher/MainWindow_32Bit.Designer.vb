@@ -68,6 +68,7 @@ Partial Class Main
         Me.PictureBox18 = New System.Windows.Forms.PictureBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.GroupBox8 = New System.Windows.Forms.GroupBox()
+        Me.buttonReadOld32bitChangelogs = New System.Windows.Forms.Button()
         Me.GroupBox9 = New System.Windows.Forms.GroupBox()
         Me.ThreeTwoBitHist = New System.Windows.Forms.Button()
         Me.SixFourVerHistButton = New System.Windows.Forms.Button()
@@ -79,7 +80,6 @@ Partial Class Main
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.buttonReadOld32bitChangelogs = New System.Windows.Forms.Button()
         Me.StatusStrip1.SuspendLayout()
         Me.ToolStripContainer1.BottomToolStripPanel.SuspendLayout()
         Me.ToolStripContainer1.ContentPanel.SuspendLayout()
@@ -609,6 +609,15 @@ Partial Class Main
         Me.GroupBox8.TabStop = False
         Me.GroupBox8.Text = "Version History"
         '
+        'buttonReadOld32bitChangelogs
+        '
+        Me.buttonReadOld32bitChangelogs.Location = New System.Drawing.Point(10, 336)
+        Me.buttonReadOld32bitChangelogs.Name = "buttonReadOld32bitChangelogs"
+        Me.buttonReadOld32bitChangelogs.Size = New System.Drawing.Size(187, 39)
+        Me.buttonReadOld32bitChangelogs.TabIndex = 4
+        Me.buttonReadOld32bitChangelogs.Text = "Read the Old 32-bit Changelogs"
+        Me.buttonReadOld32bitChangelogs.UseVisualStyleBackColor = True
+        '
         'GroupBox9
         '
         Me.GroupBox9.Controls.Add(Me.ThreeTwoBitHist)
@@ -644,7 +653,7 @@ Partial Class Main
         Me.UpdateHistoryTextBox.Location = New System.Drawing.Point(3, 16)
         Me.UpdateHistoryTextBox.Name = "UpdateHistoryTextBox"
         Me.UpdateHistoryTextBox.ReadOnly = True
-        Me.UpdateHistoryTextBox.Size = New System.Drawing.Size(194, 219)
+        Me.UpdateHistoryTextBox.Size = New System.Drawing.Size(194, 314)
         Me.UpdateHistoryTextBox.TabIndex = 0
         Me.UpdateHistoryTextBox.Text = resources.GetString("UpdateHistoryTextBox.Text")
         '
@@ -722,15 +731,6 @@ Partial Class Main
         Me.TextBox1.Size = New System.Drawing.Size(458, 232)
         Me.TextBox1.TabIndex = 0
         Me.TextBox1.Text = resources.GetString("TextBox1.Text")
-        '
-        'buttonReadOld32bitChangelogs
-        '
-        Me.buttonReadOld32bitChangelogs.Location = New System.Drawing.Point(7, 241)
-        Me.buttonReadOld32bitChangelogs.Name = "buttonReadOld32bitChangelogs"
-        Me.buttonReadOld32bitChangelogs.Size = New System.Drawing.Size(187, 73)
-        Me.buttonReadOld32bitChangelogs.TabIndex = 4
-        Me.buttonReadOld32bitChangelogs.Text = "Read the Old 32-bit Changelogs"
-        Me.buttonReadOld32bitChangelogs.UseVisualStyleBackColor = True
         '
         'Main
         '
