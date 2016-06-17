@@ -165,6 +165,7 @@ Partial Class Main
         '
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControl1.Location = New System.Drawing.Point(0, 0)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
@@ -181,7 +182,7 @@ Partial Class Main
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(692, 498)
+        Me.TabPage1.Size = New System.Drawing.Size(698, 504)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Application Links for Office"
         Me.TabPage1.ToolTipText = "Shows the programs that can be started in the app"
@@ -196,7 +197,7 @@ Partial Class Main
         Me.GroupBox5.Controls.Add(Me.PictureBox11)
         Me.GroupBox5.Location = New System.Drawing.Point(437, 344)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(229, 148)
+        Me.GroupBox5.Size = New System.Drawing.Size(229, 154)
         Me.GroupBox5.TabIndex = 14
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Options"
@@ -360,7 +361,7 @@ Partial Class Main
         Me.GroupBox6.Controls.Add(Me.Button1)
         Me.GroupBox6.Location = New System.Drawing.Point(223, 0)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(191, 492)
+        Me.GroupBox6.Size = New System.Drawing.Size(191, 498)
         Me.GroupBox6.TabIndex = 12
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Professional Applications"
@@ -459,7 +460,7 @@ Partial Class Main
         Me.GroupBox4.Controls.Add(Me.PictureBox18)
         Me.GroupBox4.Location = New System.Drawing.Point(8, 0)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(190, 492)
+        Me.GroupBox4.Size = New System.Drawing.Size(190, 498)
         Me.GroupBox4.TabIndex = 10
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Standard Applications"
@@ -467,7 +468,7 @@ Partial Class Main
         'PictureBox14
         '
         Me.PictureBox14.Image = Global.MSOfficeAppLauncher.My.Resources.Resources.Word
-        Me.PictureBox14.Location = New System.Drawing.Point(7, 280)
+        Me.PictureBox14.Location = New System.Drawing.Point(7, 273)
         Me.PictureBox14.Name = "PictureBox14"
         Me.PictureBox14.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -477,7 +478,7 @@ Partial Class Main
         'Button9
         '
         Me.Button9.AccessibleName = "Launch Microsoft Word 2010"
-        Me.Button9.Location = New System.Drawing.Point(63, 280)
+        Me.Button9.Location = New System.Drawing.Point(63, 273)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(105, 50)
         Me.Button9.TabIndex = 5
@@ -487,7 +488,7 @@ Partial Class Main
         'Button6
         '
         Me.Button6.AccessibleName = "Launch Microsoft PowerPoint 2010"
-        Me.Button6.Location = New System.Drawing.Point(63, 217)
+        Me.Button6.Location = New System.Drawing.Point(63, 210)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(105, 50)
         Me.Button6.TabIndex = 4
@@ -497,7 +498,7 @@ Partial Class Main
         'PictureBox15
         '
         Me.PictureBox15.Image = Global.MSOfficeAppLauncher.My.Resources.Resources.Powerpoint
-        Me.PictureBox15.Location = New System.Drawing.Point(7, 217)
+        Me.PictureBox15.Location = New System.Drawing.Point(7, 210)
         Me.PictureBox15.Name = "PictureBox15"
         Me.PictureBox15.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -507,7 +508,7 @@ Partial Class Main
         'Button5
         '
         Me.Button5.AccessibleName = "Launch Microsoft Outlook 2010"
-        Me.Button5.Location = New System.Drawing.Point(63, 154)
+        Me.Button5.Location = New System.Drawing.Point(63, 147)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(105, 50)
         Me.Button5.TabIndex = 3
@@ -517,7 +518,7 @@ Partial Class Main
         'PictureBox16
         '
         Me.PictureBox16.Image = Global.MSOfficeAppLauncher.My.Resources.Resources.Outlook
-        Me.PictureBox16.Location = New System.Drawing.Point(7, 154)
+        Me.PictureBox16.Location = New System.Drawing.Point(7, 147)
         Me.PictureBox16.Name = "PictureBox16"
         Me.PictureBox16.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -547,7 +548,7 @@ Partial Class Main
         'PictureBox17
         '
         Me.PictureBox17.Image = Global.MSOfficeAppLauncher.My.Resources.Resources.Onenote
-        Me.PictureBox17.Location = New System.Drawing.Point(7, 86)
+        Me.PictureBox17.Location = New System.Drawing.Point(7, 84)
         Me.PictureBox17.Name = "PictureBox17"
         Me.PictureBox17.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -643,7 +644,7 @@ Partial Class Main
         Me.GroupBox3.Controls.Add(Me.TextBox2)
         Me.GroupBox3.Location = New System.Drawing.Point(9, 271)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(471, 156)
+        Me.GroupBox3.Size = New System.Drawing.Size(471, 159)
         Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Notes"
@@ -656,7 +657,7 @@ Partial Class Main
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.ReadOnly = True
         Me.TextBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox2.Size = New System.Drawing.Size(458, 130)
+        Me.TextBox2.Size = New System.Drawing.Size(458, 133)
         Me.TextBox2.TabIndex = 0
         Me.TextBox2.Text = resources.GetString("TextBox2.Text")
         '
@@ -664,9 +665,9 @@ Partial Class Main
         '
         Me.GroupBox2.Controls.Add(Me.LinkLabel2)
         Me.GroupBox2.Controls.Add(Me.LinkLabel1)
-        Me.GroupBox2.Location = New System.Drawing.Point(9, 433)
+        Me.GroupBox2.Location = New System.Drawing.Point(9, 436)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(471, 61)
+        Me.GroupBox2.Size = New System.Drawing.Size(471, 68)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "My Web Sites"
@@ -674,7 +675,7 @@ Partial Class Main
         'LinkLabel2
         '
         Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.Location = New System.Drawing.Point(73, 30)
+        Me.LinkLabel2.Location = New System.Drawing.Point(85, 30)
         Me.LinkLabel2.Name = "LinkLabel2"
         Me.LinkLabel2.Size = New System.Drawing.Size(116, 13)
         Me.LinkLabel2.TabIndex = 1
