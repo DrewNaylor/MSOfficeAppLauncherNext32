@@ -40,6 +40,22 @@ Public Class Main
 
     Private Sub Main_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         zSecretOptionsButton.Hide()
+
+        ' Put the text in the About box on launch.
+        TextBox1.Text = ("Drew's App Launcher for Microsoft Office Professional Plus 2010" & Environment.NewLine)
+        TextBox1.AppendText("Version 2.8 Snapshot Preview 2" & Environment.NewLine)
+        TextBox1.AppendText("Compiled for 32-bit systems with a 32-bit installation of MS Office 2010" & Environment.NewLine)
+        TextBox1.AppendText("" & Environment.NewLine)
+        TextBox1.AppendText("Copyright (C) 2013-2016 Drew Naylor" & Environment.NewLine)
+        TextBox1.AppendText("This app is designed to quickly and easily launch MS Office Professional Plus 2010 software." & Environment.NewLine)
+        TextBox1.AppendText("It can also clear up space on your desktop." & Environment.NewLine)
+        TextBox1.AppendText("I am not intending on infringing on Microsoft's copyrights, so this is only a shortcut application." & Environment.NewLine)
+        TextBox1.AppendText("" & Environment.NewLine)
+        TextBox1.AppendText("App compiled on " & Environment.NewLine)
+        TextBox1.AppendText("" & Environment.NewLine)
+        TextBox1.AppendText("Copyright notice: Office, Microsoft Office, Word, Excel, PowerPoint, and all related words (by MSFT) are Copyright [a long time ago]-[sometime in the future] Microsoft Corp. All Rights Reserved for Microsoft's copyrights." & Environment.NewLine)
+        TextBox1.AppendText("" & Environment.NewLine)
+        TextBox1.AppendText("This application is licensed under the Gnu GPL v3+ and Drew's Modification Exception." & Environment.NewLine)
     End Sub
 
 #Region "Applications to launch."
