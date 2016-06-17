@@ -660,7 +660,6 @@ Partial Class Main
         Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(458, 133)
         Me.TextBox2.TabIndex = 0
-        Me.TextBox2.Text = resources.GetString("TextBox2.Text")
         '
         'GroupBox2
         '
