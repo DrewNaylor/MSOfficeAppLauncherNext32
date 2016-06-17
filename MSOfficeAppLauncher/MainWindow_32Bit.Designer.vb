@@ -168,7 +168,7 @@ Partial Class Main
         Me.TabControl1.Location = New System.Drawing.Point(0, 0)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(700, 524)
+        Me.TabControl1.Size = New System.Drawing.Size(706, 530)
         Me.TabControl1.TabIndex = 0
         '
         'TabPage1
@@ -573,7 +573,7 @@ Partial Class Main
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(692, 498)
+        Me.TabPage2.Size = New System.Drawing.Size(698, 504)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "About the Application"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -583,9 +583,9 @@ Partial Class Main
         Me.GroupBox8.Controls.Add(Me.buttonReadOld32bitChangelogs)
         Me.GroupBox8.Controls.Add(Me.GroupBox9)
         Me.GroupBox8.Controls.Add(Me.UpdateHistoryTextBox)
-        Me.GroupBox8.Location = New System.Drawing.Point(486, 1)
+        Me.GroupBox8.Location = New System.Drawing.Point(486, 7)
         Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Size = New System.Drawing.Size(200, 497)
+        Me.GroupBox8.Size = New System.Drawing.Size(206, 497)
         Me.GroupBox8.TabIndex = 4
         Me.GroupBox8.TabStop = False
         Me.GroupBox8.Text = "Version History"
@@ -605,14 +605,14 @@ Partial Class Main
         Me.GroupBox9.Controls.Add(Me.SixFourVerHistButton)
         Me.GroupBox9.Location = New System.Drawing.Point(7, 381)
         Me.GroupBox9.Name = "GroupBox9"
-        Me.GroupBox9.Size = New System.Drawing.Size(187, 112)
+        Me.GroupBox9.Size = New System.Drawing.Size(193, 112)
         Me.GroupBox9.TabIndex = 3
         Me.GroupBox9.TabStop = False
         Me.GroupBox9.Text = "Edition-specific Version History"
         '
         'ThreeTwoBitHist
         '
-        Me.ThreeTwoBitHist.Location = New System.Drawing.Point(21, 19)
+        Me.ThreeTwoBitHist.Location = New System.Drawing.Point(17, 19)
         Me.ThreeTwoBitHist.Name = "ThreeTwoBitHist"
         Me.ThreeTwoBitHist.Size = New System.Drawing.Size(160, 41)
         Me.ThreeTwoBitHist.TabIndex = 1
@@ -621,7 +621,7 @@ Partial Class Main
         '
         'SixFourVerHistButton
         '
-        Me.SixFourVerHistButton.Location = New System.Drawing.Point(21, 66)
+        Me.SixFourVerHistButton.Location = New System.Drawing.Point(17, 64)
         Me.SixFourVerHistButton.Name = "SixFourVerHistButton"
         Me.SixFourVerHistButton.Size = New System.Drawing.Size(160, 41)
         Me.SixFourVerHistButton.TabIndex = 2
@@ -631,10 +631,10 @@ Partial Class Main
         'UpdateHistoryTextBox
         '
         Me.UpdateHistoryTextBox.Cursor = System.Windows.Forms.Cursors.Default
-        Me.UpdateHistoryTextBox.Location = New System.Drawing.Point(3, 16)
+        Me.UpdateHistoryTextBox.Location = New System.Drawing.Point(7, 16)
         Me.UpdateHistoryTextBox.Name = "UpdateHistoryTextBox"
         Me.UpdateHistoryTextBox.ReadOnly = True
-        Me.UpdateHistoryTextBox.Size = New System.Drawing.Size(194, 314)
+        Me.UpdateHistoryTextBox.Size = New System.Drawing.Size(193, 314)
         Me.UpdateHistoryTextBox.TabIndex = 0
         Me.UpdateHistoryTextBox.Text = resources.GetString("UpdateHistoryTextBox.Text")
         '
