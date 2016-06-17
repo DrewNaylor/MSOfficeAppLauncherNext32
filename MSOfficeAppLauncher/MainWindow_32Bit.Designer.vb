@@ -28,7 +28,6 @@ Partial Class Main
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripContainer1 = New System.Windows.Forms.ToolStripContainer()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
@@ -68,6 +67,7 @@ Partial Class Main
         Me.PictureBox18 = New System.Windows.Forms.PictureBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.GroupBox8 = New System.Windows.Forms.GroupBox()
+        Me.buttonReadOld32bitChangelogs = New System.Windows.Forms.Button()
         Me.GroupBox9 = New System.Windows.Forms.GroupBox()
         Me.ThreeTwoBitHist = New System.Windows.Forms.Button()
         Me.SixFourVerHistButton = New System.Windows.Forms.Button()
@@ -79,11 +79,11 @@ Partial Class Main
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
         Me.StatusStrip1.SuspendLayout()
         Me.ToolStripContainer1.BottomToolStripPanel.SuspendLayout()
         Me.ToolStripContainer1.ContentPanel.SuspendLayout()
         Me.ToolStripContainer1.SuspendLayout()
-        Me.TableLayoutPanel1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
@@ -150,7 +150,7 @@ Partial Class Main
         'ToolStripContainer1.ContentPanel
         '
         Me.ToolStripContainer1.ContentPanel.AutoScroll = True
-        Me.ToolStripContainer1.ContentPanel.Controls.Add(Me.TableLayoutPanel1)
+        Me.ToolStripContainer1.ContentPanel.Controls.Add(Me.TabControl1)
         Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(706, 530)
         Me.ToolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ToolStripContainer1.LeftToolStripPanelVisible = False
@@ -162,31 +162,15 @@ Partial Class Main
         Me.ToolStripContainer1.Text = "ToolStripContainer1"
         Me.ToolStripContainer1.TopToolStripPanelVisible = False
         '
-        'TableLayoutPanel1
-        '
-        Me.TableLayoutPanel1.ColumnCount = 2
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.TabControl1, 0, 0)
-        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 2
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(706, 530)
-        Me.TableLayoutPanel1.TabIndex = 1
-        '
         'TabControl1
         '
-        Me.TableLayoutPanel1.SetColumnSpan(Me.TabControl1, 2)
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Location = New System.Drawing.Point(3, 3)
+        Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TabControl1.Location = New System.Drawing.Point(0, 0)
         Me.TabControl1.Name = "TabControl1"
-        Me.TableLayoutPanel1.SetRowSpan(Me.TabControl1, 2)
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(700, 524)
+        Me.TabControl1.Size = New System.Drawing.Size(706, 530)
         Me.TabControl1.TabIndex = 0
         '
         'TabPage1
@@ -199,7 +183,7 @@ Partial Class Main
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(692, 498)
+        Me.TabPage1.Size = New System.Drawing.Size(698, 504)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Application Links for Office"
         Me.TabPage1.ToolTipText = "Shows the programs that can be started in the app"
@@ -214,7 +198,7 @@ Partial Class Main
         Me.GroupBox5.Controls.Add(Me.PictureBox11)
         Me.GroupBox5.Location = New System.Drawing.Point(437, 344)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(229, 148)
+        Me.GroupBox5.Size = New System.Drawing.Size(229, 154)
         Me.GroupBox5.TabIndex = 14
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Options"
@@ -222,7 +206,7 @@ Partial Class Main
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.MSOfficeAppLauncher.My.Resources.Resources.applauncher_icon_64x64
-        Me.PictureBox1.Location = New System.Drawing.Point(31, 90)
+        Me.PictureBox1.Location = New System.Drawing.Point(34, 90)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -232,9 +216,9 @@ Partial Class Main
         'Button15
         '
         Me.Button15.AccessibleName = "General Options for Drew's Office App Launcher"
-        Me.Button15.Location = New System.Drawing.Point(87, 91)
+        Me.Button15.Location = New System.Drawing.Point(93, 90)
         Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(97, 44)
+        Me.Button15.Size = New System.Drawing.Size(105, 44)
         Me.Button15.TabIndex = 15
         Me.Button15.Text = "General Options"
         Me.Button15.UseVisualStyleBackColor = True
@@ -252,9 +236,9 @@ Partial Class Main
         'Button14
         '
         Me.Button14.AccessibleName = "Open the Office 2010 Language Preferences"
-        Me.Button14.Location = New System.Drawing.Point(87, 32)
+        Me.Button14.Location = New System.Drawing.Point(93, 34)
         Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(97, 52)
+        Me.Button14.Size = New System.Drawing.Size(105, 50)
         Me.Button14.TabIndex = 14
         Me.Button14.Text = "Office 2010 Language Preferences"
         Me.Button14.UseVisualStyleBackColor = True
@@ -262,7 +246,7 @@ Partial Class Main
         'PictureBox11
         '
         Me.PictureBox11.Image = Global.MSOfficeAppLauncher.My.Resources.Resources.Language_Settings
-        Me.PictureBox11.Location = New System.Drawing.Point(6, 19)
+        Me.PictureBox11.Location = New System.Drawing.Point(10, 19)
         Me.PictureBox11.Name = "PictureBox11"
         Me.PictureBox11.Size = New System.Drawing.Size(75, 65)
         Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -289,7 +273,7 @@ Partial Class Main
         'PictureBox9
         '
         Me.PictureBox9.Image = Global.MSOfficeAppLauncher.My.Resources.Resources.Onenote
-        Me.PictureBox9.Location = New System.Drawing.Point(21, 217)
+        Me.PictureBox9.Location = New System.Drawing.Point(24, 210)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(60, 50)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -299,7 +283,7 @@ Partial Class Main
         'PictureBox10
         '
         Me.PictureBox10.Image = Global.MSOfficeAppLauncher.My.Resources.Resources.PictureManager
-        Me.PictureBox10.Location = New System.Drawing.Point(18, 154)
+        Me.PictureBox10.Location = New System.Drawing.Point(21, 147)
         Me.PictureBox10.Name = "PictureBox10"
         Me.PictureBox10.Size = New System.Drawing.Size(63, 50)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -309,7 +293,7 @@ Partial Class Main
         'PictureBox12
         '
         Me.PictureBox12.Image = Global.MSOfficeAppLauncher.My.Resources.Resources.Clip_Organizer
-        Me.PictureBox12.Location = New System.Drawing.Point(7, 87)
+        Me.PictureBox12.Location = New System.Drawing.Point(10, 84)
         Me.PictureBox12.Name = "PictureBox12"
         Me.PictureBox12.Size = New System.Drawing.Size(74, 50)
         Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -319,7 +303,7 @@ Partial Class Main
         'PictureBox13
         '
         Me.PictureBox13.Image = Global.MSOfficeAppLauncher.My.Resources.Resources.MSQuery
-        Me.PictureBox13.Location = New System.Drawing.Point(7, 31)
+        Me.PictureBox13.Location = New System.Drawing.Point(10, 28)
         Me.PictureBox13.Name = "PictureBox13"
         Me.PictureBox13.Size = New System.Drawing.Size(74, 50)
         Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -329,9 +313,9 @@ Partial Class Main
         'Button13
         '
         Me.Button13.AccessibleName = "Launch Microsoft OneNote Quick Launcher"
-        Me.Button13.Location = New System.Drawing.Point(87, 217)
+        Me.Button13.Location = New System.Drawing.Point(93, 210)
         Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(97, 50)
+        Me.Button13.Size = New System.Drawing.Size(105, 50)
         Me.Button13.TabIndex = 13
         Me.Button13.Text = "OneNote Quick Launcher"
         Me.Button13.UseVisualStyleBackColor = True
@@ -339,9 +323,9 @@ Partial Class Main
         'Button12
         '
         Me.Button12.AccessibleName = "Launch Microsoft Picture Manager"
-        Me.Button12.Location = New System.Drawing.Point(87, 154)
+        Me.Button12.Location = New System.Drawing.Point(93, 147)
         Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(97, 51)
+        Me.Button12.Size = New System.Drawing.Size(105, 50)
         Me.Button12.TabIndex = 12
         Me.Button12.Text = "Microsoft Picture Manager"
         Me.Button12.UseVisualStyleBackColor = True
@@ -349,9 +333,9 @@ Partial Class Main
         'Button11
         '
         Me.Button11.AccessibleName = "Launch Microsoft Clip Organizer"
-        Me.Button11.Location = New System.Drawing.Point(87, 86)
+        Me.Button11.Location = New System.Drawing.Point(93, 84)
         Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(97, 51)
+        Me.Button11.Size = New System.Drawing.Size(105, 50)
         Me.Button11.TabIndex = 11
         Me.Button11.Text = "Microsoft Clip Organizer"
         Me.Button11.UseVisualStyleBackColor = True
@@ -359,9 +343,9 @@ Partial Class Main
         'Button10
         '
         Me.Button10.AccessibleName = "Launch Microsoft Query"
-        Me.Button10.Location = New System.Drawing.Point(87, 31)
+        Me.Button10.Location = New System.Drawing.Point(93, 28)
         Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(97, 50)
+        Me.Button10.Size = New System.Drawing.Size(105, 50)
         Me.Button10.TabIndex = 10
         Me.Button10.Text = "Microsoft Query (2010?)"
         Me.Button10.UseVisualStyleBackColor = True
@@ -378,7 +362,7 @@ Partial Class Main
         Me.GroupBox6.Controls.Add(Me.Button1)
         Me.GroupBox6.Location = New System.Drawing.Point(223, 0)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(191, 492)
+        Me.GroupBox6.Size = New System.Drawing.Size(191, 498)
         Me.GroupBox6.TabIndex = 12
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Professional Applications"
@@ -386,7 +370,7 @@ Partial Class Main
         'PictureBox8
         '
         Me.PictureBox8.Image = Global.MSOfficeAppLauncher.My.Resources.Resources.Sharepoint_Workspace
-        Me.PictureBox8.Location = New System.Drawing.Point(7, 220)
+        Me.PictureBox8.Location = New System.Drawing.Point(7, 210)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -396,7 +380,7 @@ Partial Class Main
         'PictureBox7
         '
         Me.PictureBox7.Image = Global.MSOfficeAppLauncher.My.Resources.Resources.Publisher
-        Me.PictureBox7.Location = New System.Drawing.Point(7, 155)
+        Me.PictureBox7.Location = New System.Drawing.Point(7, 147)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -426,7 +410,7 @@ Partial Class Main
         'Button8
         '
         Me.Button8.AccessibleName = "Launch Microsoft SharePoint Workspace 2010"
-        Me.Button8.Location = New System.Drawing.Point(63, 220)
+        Me.Button8.Location = New System.Drawing.Point(63, 210)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(105, 50)
         Me.Button8.TabIndex = 9
@@ -438,7 +422,7 @@ Partial Class Main
         Me.Button3.AccessibleName = "Launch Microsoft InfoPath 2010"
         Me.Button3.Location = New System.Drawing.Point(63, 84)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(105, 52)
+        Me.Button3.Size = New System.Drawing.Size(105, 50)
         Me.Button3.TabIndex = 7
         Me.Button3.Text = "Microsoft InfoPath 2010"
         Me.Button3.UseVisualStyleBackColor = True
@@ -446,9 +430,9 @@ Partial Class Main
         'Button7
         '
         Me.Button7.AccessibleName = "Launch Microsoft Publisher 2010"
-        Me.Button7.Location = New System.Drawing.Point(63, 154)
+        Me.Button7.Location = New System.Drawing.Point(63, 147)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(105, 51)
+        Me.Button7.Size = New System.Drawing.Size(105, 50)
         Me.Button7.TabIndex = 8
         Me.Button7.Text = "Microsoft Publisher 2010"
         Me.Button7.UseVisualStyleBackColor = True
@@ -477,7 +461,7 @@ Partial Class Main
         Me.GroupBox4.Controls.Add(Me.PictureBox18)
         Me.GroupBox4.Location = New System.Drawing.Point(8, 0)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(190, 492)
+        Me.GroupBox4.Size = New System.Drawing.Size(190, 498)
         Me.GroupBox4.TabIndex = 10
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Standard Applications"
@@ -485,9 +469,9 @@ Partial Class Main
         'PictureBox14
         '
         Me.PictureBox14.Image = Global.MSOfficeAppLauncher.My.Resources.Resources.Word
-        Me.PictureBox14.Location = New System.Drawing.Point(7, 299)
+        Me.PictureBox14.Location = New System.Drawing.Point(7, 273)
         Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(47, 50)
+        Me.PictureBox14.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox14.TabIndex = 24
         Me.PictureBox14.TabStop = False
@@ -495,7 +479,7 @@ Partial Class Main
         'Button9
         '
         Me.Button9.AccessibleName = "Launch Microsoft Word 2010"
-        Me.Button9.Location = New System.Drawing.Point(60, 299)
+        Me.Button9.Location = New System.Drawing.Point(63, 273)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(105, 50)
         Me.Button9.TabIndex = 5
@@ -505,7 +489,7 @@ Partial Class Main
         'Button6
         '
         Me.Button6.AccessibleName = "Launch Microsoft PowerPoint 2010"
-        Me.Button6.Location = New System.Drawing.Point(60, 225)
+        Me.Button6.Location = New System.Drawing.Point(63, 210)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(105, 50)
         Me.Button6.TabIndex = 4
@@ -515,9 +499,9 @@ Partial Class Main
         'PictureBox15
         '
         Me.PictureBox15.Image = Global.MSOfficeAppLauncher.My.Resources.Resources.Powerpoint
-        Me.PictureBox15.Location = New System.Drawing.Point(7, 225)
+        Me.PictureBox15.Location = New System.Drawing.Point(7, 210)
         Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(47, 50)
+        Me.PictureBox15.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox15.TabIndex = 23
         Me.PictureBox15.TabStop = False
@@ -525,7 +509,7 @@ Partial Class Main
         'Button5
         '
         Me.Button5.AccessibleName = "Launch Microsoft Outlook 2010"
-        Me.Button5.Location = New System.Drawing.Point(60, 154)
+        Me.Button5.Location = New System.Drawing.Point(63, 147)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(105, 50)
         Me.Button5.TabIndex = 3
@@ -535,9 +519,9 @@ Partial Class Main
         'PictureBox16
         '
         Me.PictureBox16.Image = Global.MSOfficeAppLauncher.My.Resources.Resources.Outlook
-        Me.PictureBox16.Location = New System.Drawing.Point(7, 154)
+        Me.PictureBox16.Location = New System.Drawing.Point(7, 147)
         Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.Size = New System.Drawing.Size(47, 50)
+        Me.PictureBox16.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox16.TabIndex = 22
         Me.PictureBox16.TabStop = False
@@ -545,7 +529,7 @@ Partial Class Main
         'Button4
         '
         Me.Button4.AccessibleName = "Launch Microsoft OneNote 2010"
-        Me.Button4.Location = New System.Drawing.Point(60, 84)
+        Me.Button4.Location = New System.Drawing.Point(63, 84)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(105, 50)
         Me.Button4.TabIndex = 2
@@ -555,7 +539,7 @@ Partial Class Main
         'Button2
         '
         Me.Button2.AccessibleName = "Launch Microsoft Excel 2010"
-        Me.Button2.Location = New System.Drawing.Point(60, 20)
+        Me.Button2.Location = New System.Drawing.Point(63, 20)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(105, 50)
         Me.Button2.TabIndex = 1
@@ -567,7 +551,7 @@ Partial Class Main
         Me.PictureBox17.Image = Global.MSOfficeAppLauncher.My.Resources.Resources.Onenote
         Me.PictureBox17.Location = New System.Drawing.Point(7, 84)
         Me.PictureBox17.Name = "PictureBox17"
-        Me.PictureBox17.Size = New System.Drawing.Size(47, 50)
+        Me.PictureBox17.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox17.TabIndex = 21
         Me.PictureBox17.TabStop = False
@@ -577,7 +561,7 @@ Partial Class Main
         Me.PictureBox18.Image = Global.MSOfficeAppLauncher.My.Resources.Resources.Excel
         Me.PictureBox18.Location = New System.Drawing.Point(7, 20)
         Me.PictureBox18.Name = "PictureBox18"
-        Me.PictureBox18.Size = New System.Drawing.Size(47, 50)
+        Me.PictureBox18.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox18.TabIndex = 20
         Me.PictureBox18.TabStop = False
@@ -591,21 +575,31 @@ Partial Class Main
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(692, 498)
+        Me.TabPage2.Size = New System.Drawing.Size(698, 504)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "About the Application"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
         'GroupBox8
         '
+        Me.GroupBox8.Controls.Add(Me.buttonReadOld32bitChangelogs)
         Me.GroupBox8.Controls.Add(Me.GroupBox9)
         Me.GroupBox8.Controls.Add(Me.UpdateHistoryTextBox)
-        Me.GroupBox8.Location = New System.Drawing.Point(486, 1)
+        Me.GroupBox8.Location = New System.Drawing.Point(486, 7)
         Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Size = New System.Drawing.Size(200, 497)
+        Me.GroupBox8.Size = New System.Drawing.Size(206, 497)
         Me.GroupBox8.TabIndex = 4
         Me.GroupBox8.TabStop = False
         Me.GroupBox8.Text = "Version History"
+        '
+        'buttonReadOld32bitChangelogs
+        '
+        Me.buttonReadOld32bitChangelogs.Location = New System.Drawing.Point(10, 336)
+        Me.buttonReadOld32bitChangelogs.Name = "buttonReadOld32bitChangelogs"
+        Me.buttonReadOld32bitChangelogs.Size = New System.Drawing.Size(187, 39)
+        Me.buttonReadOld32bitChangelogs.TabIndex = 4
+        Me.buttonReadOld32bitChangelogs.Text = "Read the Old 32-bit Changelogs"
+        Me.buttonReadOld32bitChangelogs.UseVisualStyleBackColor = True
         '
         'GroupBox9
         '
@@ -613,14 +607,14 @@ Partial Class Main
         Me.GroupBox9.Controls.Add(Me.SixFourVerHistButton)
         Me.GroupBox9.Location = New System.Drawing.Point(7, 381)
         Me.GroupBox9.Name = "GroupBox9"
-        Me.GroupBox9.Size = New System.Drawing.Size(187, 112)
+        Me.GroupBox9.Size = New System.Drawing.Size(193, 112)
         Me.GroupBox9.TabIndex = 3
         Me.GroupBox9.TabStop = False
         Me.GroupBox9.Text = "Edition-specific Version History"
         '
         'ThreeTwoBitHist
         '
-        Me.ThreeTwoBitHist.Location = New System.Drawing.Point(21, 19)
+        Me.ThreeTwoBitHist.Location = New System.Drawing.Point(17, 19)
         Me.ThreeTwoBitHist.Name = "ThreeTwoBitHist"
         Me.ThreeTwoBitHist.Size = New System.Drawing.Size(160, 41)
         Me.ThreeTwoBitHist.TabIndex = 1
@@ -629,7 +623,7 @@ Partial Class Main
         '
         'SixFourVerHistButton
         '
-        Me.SixFourVerHistButton.Location = New System.Drawing.Point(21, 66)
+        Me.SixFourVerHistButton.Location = New System.Drawing.Point(17, 64)
         Me.SixFourVerHistButton.Name = "SixFourVerHistButton"
         Me.SixFourVerHistButton.Size = New System.Drawing.Size(160, 41)
         Me.SixFourVerHistButton.TabIndex = 2
@@ -639,10 +633,11 @@ Partial Class Main
         'UpdateHistoryTextBox
         '
         Me.UpdateHistoryTextBox.Cursor = System.Windows.Forms.Cursors.Default
-        Me.UpdateHistoryTextBox.Location = New System.Drawing.Point(3, 16)
+        Me.UpdateHistoryTextBox.Location = New System.Drawing.Point(7, 16)
         Me.UpdateHistoryTextBox.Name = "UpdateHistoryTextBox"
         Me.UpdateHistoryTextBox.ReadOnly = True
-        Me.UpdateHistoryTextBox.Size = New System.Drawing.Size(194, 359)
+        Me.UpdateHistoryTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None
+        Me.UpdateHistoryTextBox.Size = New System.Drawing.Size(193, 314)
         Me.UpdateHistoryTextBox.TabIndex = 0
         Me.UpdateHistoryTextBox.Text = resources.GetString("UpdateHistoryTextBox.Text")
         '
@@ -651,7 +646,7 @@ Partial Class Main
         Me.GroupBox3.Controls.Add(Me.TextBox2)
         Me.GroupBox3.Location = New System.Drawing.Point(9, 271)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(471, 156)
+        Me.GroupBox3.Size = New System.Drawing.Size(471, 159)
         Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Notes"
@@ -663,18 +658,18 @@ Partial Class Main
         Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.ReadOnly = True
-        Me.TextBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox2.Size = New System.Drawing.Size(458, 130)
+        Me.TextBox2.Size = New System.Drawing.Size(458, 133)
         Me.TextBox2.TabIndex = 0
         Me.TextBox2.Text = resources.GetString("TextBox2.Text")
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.LinkLabel3)
         Me.GroupBox2.Controls.Add(Me.LinkLabel2)
         Me.GroupBox2.Controls.Add(Me.LinkLabel1)
-        Me.GroupBox2.Location = New System.Drawing.Point(9, 433)
+        Me.GroupBox2.Location = New System.Drawing.Point(9, 436)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(471, 61)
+        Me.GroupBox2.Size = New System.Drawing.Size(471, 68)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "My Web Sites"
@@ -682,7 +677,7 @@ Partial Class Main
         'LinkLabel2
         '
         Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.Location = New System.Drawing.Point(73, 30)
+        Me.LinkLabel2.Location = New System.Drawing.Point(23, 30)
         Me.LinkLabel2.Name = "LinkLabel2"
         Me.LinkLabel2.Size = New System.Drawing.Size(116, 13)
         Me.LinkLabel2.TabIndex = 1
@@ -692,7 +687,7 @@ Partial Class Main
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(246, 30)
+        Me.LinkLabel1.Location = New System.Drawing.Point(171, 30)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(116, 13)
         Me.LinkLabel1.TabIndex = 0
@@ -716,10 +711,19 @@ Partial Class Main
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
-        Me.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.TextBox1.Size = New System.Drawing.Size(458, 232)
         Me.TextBox1.TabIndex = 0
         Me.TextBox1.Text = resources.GetString("TextBox1.Text")
+        '
+        'LinkLabel3
+        '
+        Me.LinkLabel3.AutoSize = True
+        Me.LinkLabel3.Location = New System.Drawing.Point(319, 30)
+        Me.LinkLabel3.Name = "LinkLabel3"
+        Me.LinkLabel3.Size = New System.Drawing.Size(118, 13)
+        Me.LinkLabel3.TabIndex = 2
+        Me.LinkLabel3.TabStop = True
+        Me.LinkLabel3.Text = "Visit the GitHub Repo..."
         '
         'Main
         '
@@ -735,7 +739,7 @@ Partial Class Main
         Me.MinimumSize = New System.Drawing.Size(520, 520)
         Me.Name = "Main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Drew's App Launcher for Office 2010 ProPlus (32-bit Edition, Snapshot Preview)"
+        Me.Text = "Drew's App Launcher for Office 2010 ProPlus (32-bit Edition, Snapshot Preview 2)"
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
         Me.ToolStripContainer1.BottomToolStripPanel.ResumeLayout(False)
@@ -743,7 +747,6 @@ Partial Class Main
         Me.ToolStripContainer1.ContentPanel.ResumeLayout(False)
         Me.ToolStripContainer1.ResumeLayout(False)
         Me.ToolStripContainer1.PerformLayout()
-        Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.GroupBox5.ResumeLayout(False)
@@ -810,7 +813,6 @@ Partial Class Main
     Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents GroupBox8 As System.Windows.Forms.GroupBox
     Friend WithEvents UpdateHistoryTextBox As System.Windows.Forms.RichTextBox
     Friend WithEvents ThreeTwoBitHist As System.Windows.Forms.Button
@@ -833,5 +835,7 @@ Partial Class Main
     Friend WithEvents Button15 As System.Windows.Forms.Button
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents LinkLabel2 As System.Windows.Forms.LinkLabel
+    Friend WithEvents buttonReadOld32bitChangelogs As System.Windows.Forms.Button
+    Friend WithEvents LinkLabel3 As System.Windows.Forms.LinkLabel
 
 End Class

@@ -24,8 +24,8 @@ Partial Class OptionsWindow32
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.groupboxChangelogStyle = New System.Windows.Forms.GroupBox()
-        Me.checkboxChangelog = New System.Windows.Forms.CheckBox()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.checkboxChangelog = New System.Windows.Forms.CheckBox()
         Me.buttonCancel = New System.Windows.Forms.Button()
         Me.buttonResetToDefaults = New System.Windows.Forms.Button()
         Me.buttonSaveSettings = New System.Windows.Forms.Button()
@@ -54,14 +54,25 @@ Partial Class OptionsWindow32
         '
         'groupboxChangelogStyle
         '
-        Me.groupboxChangelogStyle.Controls.Add(Me.checkboxChangelog)
         Me.groupboxChangelogStyle.Controls.Add(Me.Label3)
+        Me.groupboxChangelogStyle.Controls.Add(Me.checkboxChangelog)
         Me.groupboxChangelogStyle.Location = New System.Drawing.Point(4, 126)
         Me.groupboxChangelogStyle.Name = "groupboxChangelogStyle"
         Me.groupboxChangelogStyle.Size = New System.Drawing.Size(361, 107)
         Me.groupboxChangelogStyle.TabIndex = 5
         Me.groupboxChangelogStyle.TabStop = False
         Me.groupboxChangelogStyle.Text = "How should changelogs be presented?"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.ForeColor = System.Drawing.Color.Red
+        Me.Label3.Location = New System.Drawing.Point(39, 30)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(247, 26)
+        Me.Label3.TabIndex = 4
+        Me.Label3.Text = "The following option will be removed in version 3.0." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "If unsure, leave it uncheck" & _
+    "ed."
         '
         'checkboxChangelog
         '
@@ -70,19 +81,10 @@ Partial Class OptionsWindow32
         Me.checkboxChangelog.CheckState = System.Windows.Forms.CheckState.Checked
         Me.checkboxChangelog.Location = New System.Drawing.Point(21, 78)
         Me.checkboxChangelog.Name = "checkboxChangelog"
-        Me.checkboxChangelog.Size = New System.Drawing.Size(15, 14)
+        Me.checkboxChangelog.Size = New System.Drawing.Size(323, 17)
         Me.checkboxChangelog.TabIndex = 3
+        Me.checkboxChangelog.Text = "Use the old, soon-to-be-unsupported internal changelog pages."
         Me.checkboxChangelog.UseVisualStyleBackColor = True
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(42, 20)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(264, 39)
-        Me.Label3.TabIndex = 0
-        Me.Label3.Text = "This setting configures whether the changelogs should" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "appear in your default bro" & _
-    "wser or use an integrated " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "page."
         '
         'buttonCancel
         '
