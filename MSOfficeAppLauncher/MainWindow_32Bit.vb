@@ -38,10 +38,10 @@ Public Class Main
     '   OptionsWindow32.ShowDialog()
     'End Sub
 
-    ' This code is used to work around label text being copied to the clipboard when the user double-clicks on the zSecretOptionsButton label.
-    ' Comment out "zSecretOptionsButton.Hide()" code below and uncomment the code block above to use the secret button located below the "General Options" button.
-
     Private Sub Main_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+
+        ' This code is used to work around label text being copied to the clipboard when the user double-clicks on the zSecretOptionsButton label.
+        ' Comment out "zSecretOptionsButton.Hide()" code below and uncomment the code block above to use the secret button located below the "General Options" button.
         zSecretOptionsButton.Hide()
 
         ' Put the text in the About box on launch.
@@ -54,7 +54,9 @@ Public Class Main
         TextBox1.AppendText("It can also clear up space on your desktop." & Environment.NewLine)
         TextBox1.AppendText("I am not intending on infringing on Microsoft's copyrights, so this is only a shortcut application." & Environment.NewLine)
         TextBox1.AppendText("" & Environment.NewLine)
-        TextBox1.AppendText("App compiled on UTC " + InsertBuildDate)
+        ' Note: In order for the date and time to be updated, you must tell Visual Studio to build the project BEFORE debugging it. In VS2010, you can right-click
+        ' on the toolbar at the top of the window and click "Build" to add the Build Toolbar.
+        TextBox1.AppendText("App compiled at UTC " + InsertBuildDate)
         TextBox1.AppendText("" & Environment.NewLine)
         TextBox1.AppendText("Copyright notice: Office, Microsoft Office, Word, Excel, PowerPoint, and all related words (by MSFT) are Copyright [a long time ago]-[sometime in the future] Microsoft Corp. All Rights Reserved for Microsoft's copyrights." & Environment.NewLine)
         TextBox1.AppendText("" & Environment.NewLine)
