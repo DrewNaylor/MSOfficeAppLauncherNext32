@@ -111,21 +111,12 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to 2016-08-02T18:30:02
+        '''  Looks up a localized string similar to 2016-08-02T19:49:21
         '''.
         '''</summary>
         Public ReadOnly Property BuildDate() As String
             Get
                 Return ResourceManager.GetString("BuildDate", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to .
-        '''</summary>
-        Public ReadOnly Property BuildDateString() As String
-            Get
-                Return ResourceManager.GetString("BuildDateString", resourceCulture)
             End Get
         End Property
         
