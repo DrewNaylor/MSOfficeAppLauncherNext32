@@ -75,11 +75,11 @@ Partial Class Main
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
         Me.StatusStrip1.SuspendLayout()
         Me.ToolStripContainer1.BottomToolStripPanel.SuspendLayout()
         Me.ToolStripContainer1.ContentPanel.SuspendLayout()
@@ -136,9 +136,9 @@ Partial Class Main
         Me.ToolStripStatusLabel1.AccessibleName = "Welcome to the App!"
         Me.ToolStripStatusLabel1.BackColor = System.Drawing.Color.Transparent
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
-        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(645, 17)
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(520, 17)
         Me.ToolStripStatusLabel1.Text = "Welcome to Drew's App Launcher for Office 2010. Click on a program name and it sh" & _
-    "ould load somewhere on the screen."
+    "ould appear."
         '
         'ToolStripContainer1
         '
@@ -660,7 +660,6 @@ Partial Class Main
         Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(458, 133)
         Me.TextBox2.TabIndex = 0
-        Me.TextBox2.Text = resources.GetString("TextBox2.Text")
         '
         'GroupBox2
         '
@@ -673,6 +672,16 @@ Partial Class Main
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "My Web Sites"
+        '
+        'LinkLabel3
+        '
+        Me.LinkLabel3.AutoSize = True
+        Me.LinkLabel3.Location = New System.Drawing.Point(319, 30)
+        Me.LinkLabel3.Name = "LinkLabel3"
+        Me.LinkLabel3.Size = New System.Drawing.Size(118, 13)
+        Me.LinkLabel3.TabIndex = 2
+        Me.LinkLabel3.TabStop = True
+        Me.LinkLabel3.Text = "Visit the GitHub Repo..."
         '
         'LinkLabel2
         '
@@ -713,17 +722,6 @@ Partial Class Main
         Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(458, 232)
         Me.TextBox1.TabIndex = 0
-        Me.TextBox1.Text = resources.GetString("TextBox1.Text")
-        '
-        'LinkLabel3
-        '
-        Me.LinkLabel3.AutoSize = True
-        Me.LinkLabel3.Location = New System.Drawing.Point(319, 30)
-        Me.LinkLabel3.Name = "LinkLabel3"
-        Me.LinkLabel3.Size = New System.Drawing.Size(118, 13)
-        Me.LinkLabel3.TabIndex = 2
-        Me.LinkLabel3.TabStop = True
-        Me.LinkLabel3.Text = "Visit the GitHub Repo..."
         '
         'Main
         '
