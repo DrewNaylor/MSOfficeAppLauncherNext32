@@ -42,12 +42,12 @@ Public Class Main
         zSecretOptionsButton.Hide()
 
         ' Put the text in the About box on launch.
-        TextBox1.Text = ("Drew's App Launcher for Microsoft Office Professional Plus 2010" & Environment.NewLine)
+        TextBox1.Text = ("Drew's App Launcher for Microsoft Office 2010 ProPlus" & Environment.NewLine)
         TextBox1.AppendText("Version 2.8 Snapshot Preview 2" & Environment.NewLine)
-        TextBox1.AppendText("Compiled for 32-bit systems with a 32-bit installation of MS Office 2010" & Environment.NewLine)
+        TextBox1.AppendText("Compiled for 32-bit systems with a 32-bit installation of Office 2010" & Environment.NewLine)
         TextBox1.AppendText("" & Environment.NewLine)
         TextBox1.AppendText("Copyright (C) 2013-2016 Drew Naylor" & Environment.NewLine)
-        TextBox1.AppendText("This app is designed to quickly and easily launch MS Office Professional Plus 2010 software." & Environment.NewLine)
+        TextBox1.AppendText("This app is designed to quickly and easily launch Office 2010 ProPlus software." & Environment.NewLine)
         TextBox1.AppendText("It can also clear up space on your desktop." & Environment.NewLine)
         TextBox1.AppendText("I am not intending on infringing on Microsoft's copyrights, so this is only a shortcut application." & Environment.NewLine)
         TextBox1.AppendText("" & Environment.NewLine)
@@ -59,7 +59,7 @@ Public Class Main
 
         ' Put the text in the Notes box on launch.
         TextBox2.Text = ("--> Some applications will open on the task bar while others will open on top." & Environment.NewLine)
-        TextBox2.AppendText("--> This app was made for launching the default apps in Microsoft Office Professional Plus 2010. Not all MS Office 2010 app shortcuts are included." & Environment.NewLine)
+        TextBox2.AppendText("--> This app was made for launching the default apps in Microsoft Office 2010 ProPlus. Not all MS Office 2010 app shortcuts are included." & Environment.NewLine)
         TextBox2.AppendText("--> THIS IS PRERELEASE SOFTWARE! Use at your own risk. At least while the version is a ''Snapshot Preview.'' This Snapshot Preview is largely how the code appeared on the compile date." & Environment.NewLine)
         TextBox2.AppendText("--> If you didn't get a copy of the GPL v3 and Drew's Modification Exception in the download, you can grab a copy of it from the link below which says, ''Visit the GitHub Repo...'' Scroll down on that page and open the file that's called LICENSE.")
     End Sub
