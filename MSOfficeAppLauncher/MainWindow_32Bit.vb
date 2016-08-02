@@ -30,6 +30,7 @@
 
 Public Class Main
 
+    ' Create a string out of the BuildDate file.
     Dim InsertBuildDate As String = My.Resources.BuildDate
 
     ' Open the Options window using the secret button.
@@ -53,7 +54,7 @@ Public Class Main
         TextBox1.AppendText("It can also clear up space on your desktop." & Environment.NewLine)
         TextBox1.AppendText("I am not intending on infringing on Microsoft's copyrights, so this is only a shortcut application." & Environment.NewLine)
         TextBox1.AppendText("" & Environment.NewLine)
-        TextBox1.AppendText("App compiled on " & InsertBuildDate & "(This date is local to your time.)" & Environment.NewLine)
+        TextBox1.AppendText("App compiled on UTC " + InsertBuildDate)
         TextBox1.AppendText("" & Environment.NewLine)
         TextBox1.AppendText("Copyright notice: Office, Microsoft Office, Word, Excel, PowerPoint, and all related words (by MSFT) are Copyright [a long time ago]-[sometime in the future] Microsoft Corp. All Rights Reserved for Microsoft's copyrights." & Environment.NewLine)
         TextBox1.AppendText("" & Environment.NewLine)
