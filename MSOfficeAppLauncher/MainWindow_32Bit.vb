@@ -55,13 +55,13 @@ Public Class Main
         TextBox1.AppendText("" & Environment.NewLine)
         TextBox1.AppendText("Copyright notice: Office, Microsoft Office, Word, Excel, PowerPoint, and all related words (by MSFT) are Copyright [a long time ago]-[sometime in the future] Microsoft Corp. All Rights Reserved for Microsoft's copyrights." & Environment.NewLine)
         TextBox1.AppendText("" & Environment.NewLine)
-        TextBox1.AppendText("This application is licensed under the Gnu GPL v3+ and Drew's Modification Exception." & Environment.NewLine)
+        TextBox1.AppendText("This application is licensed under the Gnu GPL v3+ and Drew's Modification Exception.")
 
         ' Put the text in the Notes box on launch.
         TextBox2.Text = ("--> Some applications will open on the task bar while others will open on top." & Environment.NewLine)
         TextBox2.AppendText("--> This app was made for launching the default apps in Microsoft Office Professional Plus 2010. Not all MS Office 2010 app shortcuts are included." & Environment.NewLine)
         TextBox2.AppendText("--> THIS IS PRERELEASE SOFTWARE! Use at your own risk. At least while the version is a ''Snapshot Preview.'' This Snapshot Preview is largely how the code appeared on the compile date." & Environment.NewLine)
-        TextBox2.AppendText("--> If you didn't get a copy of the GPL v3 and Drew's Modification Exception in the download, you can grab a copy of it from the link below which says, ''Visit the GitHub Repo...'' Scroll down on that page and open the file that's called LICENSE." & Environment.NewLine)
+        TextBox2.AppendText("--> If you didn't get a copy of the GPL v3 and Drew's Modification Exception in the download, you can grab a copy of it from the link below which says, ''Visit the GitHub Repo...'' Scroll down on that page and open the file that's called LICENSE.")
     End Sub
 
 #Region "Applications to launch."
