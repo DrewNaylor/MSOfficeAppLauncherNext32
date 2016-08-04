@@ -10,8 +10,12 @@
 'it under the terms of the GNU General Public License as published by
 'the Free Software Foundation, either version 3 of the License, or
 '(at your option) any later version.
-'You must also follow "Drew's Modification Exception" for more
-'information on icons and branding.
+'
+'If you modify Drew's App Launcher, you must remove branding materials
+'such as the "D" or "DN" logo from your version and replace it with something
+'different as well as the actual name of the application to differentiate
+'it from my original version. See "Drew's Modification Exception" for
+'the full text, as well as the GPL v3+.
 '
 'Drew's App Launcher is distributed in the hope that it will be useful,
 'but WITHOUT ANY WARRANTY; without even the implied warranty of
