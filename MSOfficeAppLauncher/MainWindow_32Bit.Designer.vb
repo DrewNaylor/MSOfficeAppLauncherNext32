@@ -220,7 +220,7 @@ Partial Class Main
         Me.Button15.Name = "Button15"
         Me.Button15.Size = New System.Drawing.Size(105, 44)
         Me.Button15.TabIndex = 15
-        Me.Button15.Text = "General Options"
+        Me.Button15.Text = "General Options..."
         Me.Button15.UseVisualStyleBackColor = True
         '
         'zSecretOptionsButton
