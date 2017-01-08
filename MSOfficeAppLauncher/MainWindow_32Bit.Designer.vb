@@ -246,9 +246,9 @@ Partial Class Main
         'PictureBox11
         '
         Me.PictureBox11.Image = Global.MSOfficeAppLauncher.My.Resources.Resources.Language_Settings
-        Me.PictureBox11.Location = New System.Drawing.Point(10, 19)
+        Me.PictureBox11.Location = New System.Drawing.Point(33, 34)
         Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(75, 65)
+        Me.PictureBox11.Size = New System.Drawing.Size(51, 50)
         Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox11.TabIndex = 7
         Me.PictureBox11.TabStop = False
@@ -273,9 +273,9 @@ Partial Class Main
         'PictureBox9
         '
         Me.PictureBox9.Image = Global.MSOfficeAppLauncher.My.Resources.Resources.Onenote
-        Me.PictureBox9.Location = New System.Drawing.Point(24, 210)
+        Me.PictureBox9.Location = New System.Drawing.Point(34, 210)
         Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(60, 50)
+        Me.PictureBox9.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox9.TabIndex = 16
         Me.PictureBox9.TabStop = False
@@ -283,9 +283,9 @@ Partial Class Main
         'PictureBox10
         '
         Me.PictureBox10.Image = Global.MSOfficeAppLauncher.My.Resources.Resources.PictureManager
-        Me.PictureBox10.Location = New System.Drawing.Point(21, 147)
+        Me.PictureBox10.Location = New System.Drawing.Point(35, 147)
         Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(63, 50)
+        Me.PictureBox10.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox10.TabIndex = 15
         Me.PictureBox10.TabStop = False
@@ -293,9 +293,9 @@ Partial Class Main
         'PictureBox12
         '
         Me.PictureBox12.Image = Global.MSOfficeAppLauncher.My.Resources.Resources.Clip_Organizer
-        Me.PictureBox12.Location = New System.Drawing.Point(10, 84)
+        Me.PictureBox12.Location = New System.Drawing.Point(34, 84)
         Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(74, 50)
+        Me.PictureBox12.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox12.TabIndex = 14
         Me.PictureBox12.TabStop = False
@@ -303,9 +303,9 @@ Partial Class Main
         'PictureBox13
         '
         Me.PictureBox13.Image = Global.MSOfficeAppLauncher.My.Resources.Resources.MSQuery
-        Me.PictureBox13.Location = New System.Drawing.Point(10, 28)
+        Me.PictureBox13.Location = New System.Drawing.Point(34, 28)
         Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(74, 50)
+        Me.PictureBox13.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox13.TabIndex = 13
         Me.PictureBox13.TabStop = False
@@ -737,7 +737,7 @@ Partial Class Main
         Me.MinimumSize = New System.Drawing.Size(520, 520)
         Me.Name = "Main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Drew's App Launcher for Office 2010 ProPlus (32-bit Edition, Version 2.8 Stable)"
+        Me.Text = "Drew's App Launcher for Office 2010 ProPlus (32-bit Edition, Version 2.8.1)"
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
         Me.ToolStripContainer1.BottomToolStripPanel.ResumeLayout(False)
