@@ -4,7 +4,7 @@
 # Welcome to the repository for my App Launcher for Microsoft Office 2010!
 This is the 32-bit version. Read the file "LICENSE" in a text editor for the entire license. The readme continues after this notice.
 
-Icons are provided by the [applauncher-icons project](https://github.com/DrewNaylor/applauncher-icons)
+Icons are provided by the [applauncher-icons project](https://github.com/DrewNaylor/applauncher-icons).
 
 ```vbnet
 'Drew's MS Office App Launcher (32-bit) - Launch Office Apps Quickly!
