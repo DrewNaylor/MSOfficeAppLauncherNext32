@@ -73,10 +73,21 @@ Public Class Main
 
 #Region "Applications to launch."
 
+    ' Catch-all error handler and launcher.
+    Private Sub LaunchApp(ExeToLaunch As String, ExeFriendlyName As String)
+        ' Do a try...catch like 3.x so there's a nice error message if it goes wrong.
+        Try
+            Process.Start(My.Settings.officeDriveLocation.ToString & ":\Program Files\Microsoft Office\Office14\" & ExeToLaunch.ToString)
+        Catch ex As Exception
+            ' If we can't find the program, let the user know.
+            MessageBox.Show("We couldn't find " & ExeFriendlyName.ToString & " in " & """" & My.Settings.officeDriveLocation.ToString & ":\Program Files\Microsoft Office\Office14\""." &
+                            " Please change your drive letter in the Options window or use Drew's App Launcher 64-Bit Edition or UXL Launcher instead.")
+        End Try
+    End Sub
 
     ' Microsoft Access
     Private Sub Button1_Click_1(sender As System.Object, e As System.EventArgs) Handles Button1.Click
-        Process.Start(My.Settings.officeDriveLocation + ":\Program Files\Microsoft Office\Office14\MSACCESS.EXE")
+        LaunchApp("MSACCESS.EXE", "Microsoft Access 2010")
     End Sub
 
     ' Excel
