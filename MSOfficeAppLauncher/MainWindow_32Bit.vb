@@ -34,11 +34,6 @@ Public Class Main
     ' on the toolbar at the top of the window and click "Build" to add the Build Toolbar.
     Dim InsertBuildDate As String = My.Resources.BuildDate
 
-    ' Open the Options window using the secret button.
-    'Private Sub zSecretOptionsButton_Click(sender As System.Object, e As System.EventArgs) Handles zSecretOptionsButton.Click
-    '   OptionsWindow32.ShowDialog()
-    'End Sub
-
     Private Sub Main_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
         ' Make sure My.Settings.officeDriveLocation has only one character in it.
@@ -47,10 +42,6 @@ Public Class Main
             My.Settings.Save()
             My.Settings.Reload()
         End If
-
-        ' This code is used to work around label text being copied to the clipboard when the user double-clicks on the zSecretOptionsButton label.
-        ' Comment out "zSecretOptionsButton.Hide()" code below and uncomment the code block above to use the secret button located below the "General Options" button.
-        zSecretOptionsButton.Hide()
 
         ' Put the text in the About box on launch.
         TextBox1.Text = ("Drew's App Launcher for Microsoft Office 2010 ProPlus" & vbCrLf &
