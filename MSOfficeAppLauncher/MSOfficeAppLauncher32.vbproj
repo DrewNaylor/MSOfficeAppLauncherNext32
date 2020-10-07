@@ -219,6 +219,18 @@
   <ItemGroup>
     <Content Include="applauncher-icon.ico" />
     <Content Include="Icons.ico" />
+    <None Include="Resources\Clip Organizer-75x64.png" />
+    <None Include="Resources\Query-64x64.png" />
+    <None Include="Resources\picture manager-64x64.png" />
+    <None Include="Resources\WordLargeSVG-3D.png" />
+    <None Include="Resources\SharepointLargeSVG-3D.png" />
+    <None Include="Resources\PublisherLargeSVG-3D.png" />
+    <None Include="Resources\PowerpointLargeSVG-3D.png" />
+    <None Include="Resources\OutlookLargeSVG-3D.png" />
+    <None Include="Resources\OnenoteLargeSVG-3D.png" />
+    <None Include="Resources\InfopathLargeSVG-3D.png" />
+    <None Include="Resources\ExcelLargeSVG-3D.png" />
+    <None Include="Resources\AccessLargeSVG-3D.png" />
     <None Include="Resources\BuildDate.txt" />
     <None Include="Resources\applauncher.ico" />
     <None Include="Resources\hidden_text.ico" />
