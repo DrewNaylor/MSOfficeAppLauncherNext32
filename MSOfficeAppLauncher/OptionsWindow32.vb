@@ -73,11 +73,7 @@ Public Class OptionsWindow32
             My.Settings.officeDriveLocation = textboxOfficeDrive.Text
 
             'Choose how to display the changelogs.
-            If checkboxChangelog.Checked = True Then
-                My.Settings.deprecatedChangelogDisplayMode = True
-            Else
-                My.Settings.deprecatedChangelogDisplayMode = False
-            End If
+            My.Settings.deprecatedChangelogDisplayMode = checkboxChangelog.Checked
 
             'Save settings.
             My.Settings.Save()
@@ -106,7 +102,7 @@ Public Class OptionsWindow32
     Private Sub buttonClearDrive_Click(sender As System.Object, e As System.EventArgs) Handles buttonClearDrive.Click
 
         'Clear the OfficeDrive textbox.
-        textboxOfficeDrive.Text = ""
-        textboxOfficeDrive.Select()
+        textboxOfficeDrive.Text = String.Empty
+        textboxOfficeDrive.Focus()
     End Sub
 End Class
