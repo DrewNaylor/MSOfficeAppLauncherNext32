@@ -216,28 +216,13 @@
     <None Include="Resources\AccessLargeSVG-3D.png" />
     <None Include="Resources\BuildDate.txt" />
     <None Include="Resources\applauncher.ico" />
-    <None Include="Resources\hidden_text.ico" />
-    <None Include="Resources\Microsoft Query1.png" />
     <None Include="Resources\128x128.ico" />
     <None Include="Resources\64x64.ico" />
     <None Include="Resources\32x32.ico" />
     <None Include="Resources\My initial Transparent 64by64.png" />
     <None Include="Resources\My initial.png" />
     <None Include="Resources\My initial Transparent.png" />
-    <None Include="Resources\applauncher-icon-old.ico" />
-    <None Include="Resources\Microsoft Query.png" />
-    <None Include="Resources\picture manager.png" />
-    <None Include="Resources\Clip Organizer.png" />
     <None Include="Resources\Language Settings.png" />
-    <None Include="Resources\Word.png" />
-    <None Include="Resources\Sharepoint Workspace.png" />
-    <None Include="Resources\Publisher.png" />
-    <None Include="Resources\Powerpoint.png" />
-    <None Include="Resources\Outlook.png" />
-    <None Include="Resources\Infopath.png" />
-    <None Include="Resources\Excel.png" />
-    <None Include="Resources\Access.png" />
-    <None Include="Resources\Onenote.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
