@@ -218,7 +218,7 @@ Partial Class Main
         Me.Button15.Name = "Button15"
         Me.Button15.Size = New System.Drawing.Size(105, 44)
         Me.Button15.TabIndex = 15
-        Me.Button15.Text = "General Options..."
+        Me.Button15.Text = "Options..."
         Me.Button15.UseVisualStyleBackColor = True
         '
         'Button14
@@ -305,7 +305,7 @@ Partial Class Main
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(105, 50)
         Me.Button13.TabIndex = 13
-        Me.Button13.Text = "OneNote Quick Launcher"
+        Me.Button13.Text = "Microsoft OneNote Quick Launch"
         Me.Button13.UseVisualStyleBackColor = True
         '
         'Button12
@@ -315,7 +315,7 @@ Partial Class Main
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(105, 50)
         Me.Button12.TabIndex = 12
-        Me.Button12.Text = "Microsoft Picture Manager"
+        Me.Button12.Text = "Microsoft Office Picture Manager"
         Me.Button12.UseVisualStyleBackColor = True
         '
         'Button11
