@@ -166,12 +166,6 @@
     <Compile Include="OptionsWindow32.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WaitForRSSChangelog.Designer.vb">
-      <DependentUpon>WaitForRSSChangelog.vb</DependentUpon>
-    </Compile>
-    <Compile Include="WaitForRSSChangelog.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="32BitVerHist.resx">
@@ -197,9 +191,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OptionsWindow32.resx">
       <DependentUpon>OptionsWindow32.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WaitForRSSChangelog.resx">
-      <DependentUpon>WaitForRSSChangelog.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
