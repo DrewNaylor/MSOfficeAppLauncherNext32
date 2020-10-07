@@ -71,36 +71,6 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        '''</summary>
-        Public ReadOnly Property applauncher_128x128() As System.Drawing.Icon
-            Get
-                Dim obj As Object = ResourceManager.GetObject("applauncher_128x128", resourceCulture)
-                Return CType(obj,System.Drawing.Icon)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        '''</summary>
-        Public ReadOnly Property applauncher_32x32() As System.Drawing.Icon
-            Get
-                Dim obj As Object = ResourceManager.GetObject("applauncher_32x32", resourceCulture)
-                Return CType(obj,System.Drawing.Icon)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        '''</summary>
-        Public ReadOnly Property applauncher_64x64() As System.Drawing.Icon
-            Get
-                Dim obj As Object = ResourceManager.GetObject("applauncher_64x64", resourceCulture)
-                Return CType(obj,System.Drawing.Icon)
-            End Get
-        End Property
-        
-        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Public ReadOnly Property applauncher_icon_64x64() As System.Drawing.Bitmap
@@ -113,15 +83,18 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to applauncher-icons
         '''By Drew Naylor. Licensed under CC BY 4.0.
-        '''Version 3.0        '''
+        '''Version 3.0
         '''
-        '''The applauncher-icons project provides most of the icons used in UXL Launcher, with the exception of some icons. These include, but are not limited to, the UXL Launcher logo and the About window banner.        '''
+        '''The applauncher-icons project provides most of the icons used in Drew&apos;s App Launcher, with the exception of some icons. These include, but are not limited to, the Drew&apos;s App Launcher logo.
         '''
         '''Link to applauncher-icons project repository:
-        '''https://github.com/DrewNaylor/applauncher-icons        '''
+        '''https://github.com/DrewNaylor/applauncher-icons
         '''
         '''Link to applauncher-icons version 3.0 GitHub Releases page:
-        '''https://github.com/DrewNaylor/applauncher-icons/releases/tag/v3.0        '''        ''' [rest of string was truncated]&quot;;.
+        '''https://github.com/DrewNaylor/applauncher-icons/releases/tag/v3.0
+        '''
+        '''
+        '''No warranty i [rest of string was truncated]&quot;;.
         '''</summary>
         Public ReadOnly Property applauncher_icons_info_TXT() As String
             Get
@@ -130,7 +103,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to 2020-10-07T01:27:21
+        '''  Looks up a localized string similar to 2020-10-07T02:22:41
         '''.
         '''</summary>
         Public ReadOnly Property BuildDate() As String

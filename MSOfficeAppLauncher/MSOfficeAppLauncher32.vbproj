@@ -198,8 +198,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="applauncher-icon.ico" />
-    <Content Include="Icons.ico" />
     <None Include="Resources\applauncher-icons_info_TXT.txt" />
     <None Include="Resources\Clip Organizer-75x64.png" />
     <None Include="Resources\Query-64x64.png" />
@@ -214,13 +212,8 @@
     <None Include="Resources\ExcelLargeSVG-3D.png" />
     <None Include="Resources\AccessLargeSVG-3D.png" />
     <None Include="Resources\BuildDate.txt" />
-    <None Include="Resources\applauncher.ico" />
-    <None Include="Resources\128x128.ico" />
     <None Include="Resources\64x64.ico" />
-    <None Include="Resources\32x32.ico" />
     <None Include="Resources\My initial Transparent 64by64.png" />
-    <None Include="Resources\My initial.png" />
-    <None Include="Resources\My initial Transparent.png" />
     <None Include="Resources\Language Settings.png" />
   </ItemGroup>
   <ItemGroup>
