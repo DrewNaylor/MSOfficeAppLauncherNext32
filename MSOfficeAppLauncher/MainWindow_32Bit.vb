@@ -54,7 +54,7 @@ Public Class Main
 
         ' Put the text in the About box on launch.
         TextBox1.Text = ("Drew's App Launcher for Microsoft Office 2010 ProPlus" & vbCrLf &
-"Version 2.8.1 - Codename ""Last Huzzah""" & vbCrLf &
+        "Version 2.8.1 - Codename ""Last Huzzah""" & vbCrLf &
         "Compiled for 32-bit systems with a 32-bit installation of Office 2010" & vbCrLf &
         "" & vbCrLf &
         "Copyright (C) 2013-2017, 2020 Drew Naylor" & vbCrLf &
@@ -64,7 +64,7 @@ Public Class Main
         "" & vbCrLf &
         "App compiled at UTC " + InsertBuildDate.ToString &
         "" & vbCrLf &
-        "Copyright notice: Office, Microsoft Office, Word, Excel, PowerPoint, and all related words (by MSFT) are Copyright [a long time ago]-[sometime in the future] Microsoft Corp. All Rights Reserved for Microsoft's copyrights." & vbCrLf &
+        "Copyright notice: Office, Microsoft Office, Word, Excel, PowerPoint, and all related words (by MSFT) are Copyright Microsoft Corp. All Rights Reserved for Microsoft's copyrights." & vbCrLf &
         "" & vbCrLf &
         "This application is licensed under the Gnu GPL v3+ and Drew's Modification Exception 1.1." & vbCrLf &
         "" & vbCrLf &
