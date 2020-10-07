@@ -14,8 +14,8 @@
 'If you modify Drew's App Launcher, you must remove branding materials
 'such as the "D" or "DN" logo from your version and replace it with something
 'different as well as the actual name of the application to differentiate
-'it from my original version. See "Drew's Modification Exception" for
-'the full text, as well as the GPL v3+.
+'it from my original version. See "Drew's Modification Exception 1.1"
+'in the file "LICENSE.txt" for the full text, as well as the GPL v3+.
 '
 'Drew's App Launcher is distributed in the hope that it will be useful,
 'but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -24,8 +24,8 @@
 '
 'You should have received a copy of the GNU General Public License
 'along with Drew's App Launcher.  If not, see <http://www.gnu.org/licenses/>.
-'If you did not recieve a copy of "Drew's Modification Exception,"
-'please visit <http://drews-apps.weebly.com/about>
+'If you did not recieve a copy of "Drew's Modification Exception 1.1",
+'please visit <https://github.com/DrewNaylor/MSOfficeAppLauncherNext32/blob/master/LICENSE.txt>
 
 
 Public Class Main
@@ -66,7 +66,7 @@ Public Class Main
         "" & vbCrLf &
         "Copyright notice: Office, Microsoft Office, Word, Excel, PowerPoint, and all related words (by MSFT) are Copyright [a long time ago]-[sometime in the future] Microsoft Corp. All Rights Reserved for Microsoft's copyrights." & vbCrLf &
         "" & vbCrLf &
-        "This application is licensed under the Gnu GPL v3+ and Drew's Modification Exception." & vbCrLf &
+        "This application is licensed under the Gnu GPL v3+ and Drew's Modification Exception 1.1." & vbCrLf &
         "" & vbCrLf &
         "------------------------------------------------------" & vbCrLf &
         "" & vbCrLf &
@@ -77,7 +77,7 @@ Public Class Main
         TextBox2.AppendText("" & Environment.NewLine)
         TextBox2.AppendText("--> After this release (version 2.8) I will start on version 3.0 which is a rewrite of this app. Learn more by visiting the GitHub repository below." & Environment.NewLine)
         TextBox2.AppendText("" & Environment.NewLine)
-        TextBox2.AppendText("--> If you didn't get a copy of the GPL v3 and Drew's Modification Exception in the download, you can grab a copy of it from the link below which says, ''Visit the GitHub Repo...'' Scroll down on that page and open the file that's called LICENSE.")
+        TextBox2.AppendText("--> If you didn't get a copy of the GPL v3 and Drew's Modification Exception 1.1 in the download, you can grab a copy of it from the link below which says, ""Visit the GitHub Repo..."" Scroll down on that page and open the file that's called LICENSE.")
     End Sub
 
 #Region "Applications to launch."
