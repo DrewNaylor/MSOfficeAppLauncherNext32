@@ -81,7 +81,8 @@ Public Class Main
         Catch ex As Exception
             ' If we can't find the program, let the user know.
             MessageBox.Show("We couldn't find " & ExeFriendlyName.ToString & " in " & """" & My.Settings.officeDriveLocation.ToString & ":\Program Files\Microsoft Office\Office14\""." &
-                            " Please change your drive letter in the Options window, use Drew's App Launcher 64-bit Edition, or upgrade to UXL Launcher instead.")
+                            " Please change your drive letter in the Options window, use Drew's App Launcher 64-bit Edition, or upgrade to UXL Launcher instead.", "Couldn't find " & ExeFriendlyName,
+                            MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
 
