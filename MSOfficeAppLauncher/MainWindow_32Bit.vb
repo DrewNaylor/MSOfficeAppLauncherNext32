@@ -81,7 +81,7 @@ Public Class Main
         Catch ex As Exception
             ' If we can't find the program, let the user know.
             MessageBox.Show("We couldn't find " & ExeFriendlyName.ToString & " in " & """" & My.Settings.officeDriveLocation.ToString & ":\Program Files\Microsoft Office\Office14\""." &
-                            " Please change your drive letter in the Options window or use Drew's App Launcher 64-Bit Edition or UXL Launcher instead.")
+                            " Please change your drive letter in the Options window, use Drew's App Launcher 64-Bit Edition, or upgrade to UXL Launcher instead.")
         End Try
     End Sub
 
@@ -92,7 +92,7 @@ Public Class Main
 
     ' Excel
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
-        Process.Start(My.Settings.officeDriveLocation + ":\Program Files\Microsoft Office\Office14\EXCEL.EXE")
+        LaunchApp("EXCEL.EXE", "Microsoft Excel 2010")
     End Sub
 
     ' Infopath
