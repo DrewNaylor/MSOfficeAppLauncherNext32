@@ -43,6 +43,7 @@ Public Class OptionsWindow32
 
             'Change the textbox for choosing the drive Office is installed on back to drive C.
             textboxOfficeDrive.Text = "C"
+            textboxOfficeDrive.SelectAll()
         End If
     End Sub
 
