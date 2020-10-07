@@ -111,7 +111,26 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to 2020-10-07T01:16:55
+        '''  Looks up a localized string similar to applauncher-icons
+        '''By Drew Naylor. Licensed under CC BY 4.0.
+        '''Version 3.0        '''
+        '''
+        '''The applauncher-icons project provides most of the icons used in UXL Launcher, with the exception of some icons. These include, but are not limited to, the UXL Launcher logo and the About window banner.        '''
+        '''
+        '''Link to applauncher-icons project repository:
+        '''https://github.com/DrewNaylor/applauncher-icons        '''
+        '''
+        '''Link to applauncher-icons version 3.0 GitHub Releases page:
+        '''https://github.com/DrewNaylor/applauncher-icons/releases/tag/v3.0        '''        ''' [rest of string was truncated]&quot;;.
+        '''</summary>
+        Public ReadOnly Property applauncher_icons_info_TXT() As String
+            Get
+                Return ResourceManager.GetString("applauncher_icons_info_TXT", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 2020-10-07T01:27:21
         '''.
         '''</summary>
         Public ReadOnly Property BuildDate() As String
@@ -137,16 +156,6 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("ExcelLargeSVG_3D", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        '''</summary>
-        Public ReadOnly Property hidden_text() As System.Drawing.Icon
-            Get
-                Dim obj As Object = ResourceManager.GetObject("hidden_text", resourceCulture)
-                Return CType(obj,System.Drawing.Icon)
             End Get
         End Property
         

@@ -219,6 +219,7 @@
   <ItemGroup>
     <Content Include="applauncher-icon.ico" />
     <Content Include="Icons.ico" />
+    <None Include="Resources\applauncher-icons_info_TXT.txt" />
     <None Include="Resources\Clip Organizer-75x64.png" />
     <None Include="Resources\Query-64x64.png" />
     <None Include="Resources\picture manager-64x64.png" />
